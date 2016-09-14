@@ -1,0 +1,16 @@
+PODS:
+  - AesGcm (0.1.0)
+
+DEPENDENCIES:
+  - AesGcm (from `../`)
+
+EXTERNAL SOURCES:
+  AesGcm:
+    :path: ../
+
+SPEC CHECKSUMS:
+  AesGcm: c36b042c56de67564e58bda0bb2ca2cf7575604d
+
+PODFILE CHECKSUM: 966a982365e7059ca5c437ee7d7ad02b08966ee6
+
+COCOAPODS: 1.1.0.rc.2

@@ -1,0 +1,6 @@
+framework module AesGcm {
+  umbrella header "AesGcm-umbrella.h"
+
+  export *
+  module * { export * }
+}

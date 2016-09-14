@@ -1,15 +1,11 @@
 # AesGcm
 
-[![CI Status](http://img.shields.io/travis/Enrique de la Torre/AesGcm.svg?style=flat)](https://travis-ci.org/Enrique de la Torre/AesGcm)
 [![Version](https://img.shields.io/cocoapods/v/AesGcm.svg?style=flat)](http://cocoapods.org/pods/AesGcm)
 [![License](https://img.shields.io/cocoapods/l/AesGcm.svg?style=flat)](http://cocoapods.org/pods/AesGcm)
-[![Platform](https://img.shields.io/cocoapods/p/AesGcm.svg?style=flat)](http://cocoapods.org/pods/AesGcm)
 
-## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
+ObjC implementation of
+[Galois/Counter Mode (GCM)](http://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-38d.pdf)
+with Advanced Encryption System (AES).
 
 ## Installation
 
@@ -19,10 +15,6 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod "AesGcm"
 ```
-
-## Author
-
-Enrique de la Torre, indisoluble_dev@me.com
 
 ## License
 
