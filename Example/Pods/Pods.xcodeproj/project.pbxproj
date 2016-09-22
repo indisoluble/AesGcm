@@ -11,9 +11,18 @@
 		42E202AE825DA15542260701F7C3A051 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		8B5F2382AD34C4A54D851685645AC396 /* AesGcm-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F406977BB011990E282A500D3AF2D644 /* AesGcm-dummy.m */; };
 		8E1ED49561CD15E09DB2BA007779929A /* Pods-AesGcm_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E1792CC5222111C41FECA3E6550D887F /* Pods-AesGcm_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		963FFAF0BCDC5DAFC0D67678698F0E34 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5150F50714D52C53CB0A9E2DB68BFE /* ReplaceMe.m */; };
 		9E367B6C25C436D20235A5A006F2556D /* AesGcm-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D6B5403B89DEA46F0650AFB272BF7E02 /* AesGcm-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FC34C50409FF69D618A6D638ECD7EA65 /* Pods-AesGcm_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A204FCA29B525F83619E1C5EA0D30BC /* Pods-AesGcm_Tests-dummy.m */; };
+		FF0CFBF01D91B40F00CB3790 /* IAGGcmMathComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = FF0CFBEE1D91B40F00CB3790 /* IAGGcmMathComponents.h */; };
+		FF0CFBF11D91B40F00CB3790 /* IAGGcmMathComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0CFBEF1D91B40F00CB3790 /* IAGGcmMathComponents.m */; };
+		FF0CFBF41D91B71500CB3790 /* IAGAesComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = FF0CFBF21D91B71500CB3790 /* IAGAesComponents.h */; };
+		FF0CFBF51D91B71500CB3790 /* IAGAesComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0CFBF31D91B71500CB3790 /* IAGAesComponents.m */; };
+		FF0CFBF91D91C57700CB3790 /* IAGError.h in Headers */ = {isa = PBXBuildFile; fileRef = FF0CFBF71D91C57700CB3790 /* IAGError.h */; };
+		FF0CFBFA1D91C57700CB3790 /* IAGError.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0CFBF81D91C57700CB3790 /* IAGError.m */; };
+		FFEFF8B01D8D5DD900AF4B5A /* IAGAesGcm.h in Headers */ = {isa = PBXBuildFile; fileRef = FFEFF8AE1D8D5DD900AF4B5A /* IAGAesGcm.h */; };
+		FFEFF8B11D8D5DD900AF4B5A /* IAGAesGcm.m in Sources */ = {isa = PBXBuildFile; fileRef = FFEFF8AF1D8D5DD900AF4B5A /* IAGAesGcm.m */; };
+		FFEFF8B41D8D643300AF4B5A /* IAGCipheredData.h in Headers */ = {isa = PBXBuildFile; fileRef = FFEFF8B21D8D643300AF4B5A /* IAGCipheredData.h */; };
+		FFEFF8B51D8D643300AF4B5A /* IAGCipheredData.m in Sources */ = {isa = PBXBuildFile; fileRef = FFEFF8B31D8D643300AF4B5A /* IAGCipheredData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +41,6 @@
 		259BA140B70F75DDA62E8D63E37D36A8 /* Pods-AesGcm_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AesGcm_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		309DF19C4A34BF2561A473EE53B50355 /* Pods-AesGcm_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AesGcm_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		3A204FCA29B525F83619E1C5EA0D30BC /* Pods-AesGcm_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AesGcm_Tests-dummy.m"; sourceTree = "<group>"; };
-		3D5150F50714D52C53CB0A9E2DB68BFE /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ReplaceMe.m; sourceTree = "<group>"; };
 		551039037E11537558F6A0AF539E7115 /* Pods-AesGcm_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AesGcm_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		7984AEE1D994A7F741C7A0D9498ABD0C /* AesGcm.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AesGcm.modulemap; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -48,6 +56,17 @@
 		F0368FCE1DFF29E2DA5DD8D031D5D755 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F406977BB011990E282A500D3AF2D644 /* AesGcm-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AesGcm-dummy.m"; sourceTree = "<group>"; };
 		F966F0D384E363EC6C45833A22CC4D8C /* Pods-AesGcm_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AesGcm_Tests-resources.sh"; sourceTree = "<group>"; };
+		FF0CFBEE1D91B40F00CB3790 /* IAGGcmMathComponents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAGGcmMathComponents.h; sourceTree = "<group>"; };
+		FF0CFBEF1D91B40F00CB3790 /* IAGGcmMathComponents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAGGcmMathComponents.m; sourceTree = "<group>"; };
+		FF0CFBF21D91B71500CB3790 /* IAGAesComponents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAGAesComponents.h; sourceTree = "<group>"; };
+		FF0CFBF31D91B71500CB3790 /* IAGAesComponents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAGAesComponents.m; sourceTree = "<group>"; };
+		FF0CFBF61D91BD5C00CB3790 /* IAGTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IAGTypes.h; sourceTree = "<group>"; };
+		FF0CFBF71D91C57700CB3790 /* IAGError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAGError.h; sourceTree = "<group>"; };
+		FF0CFBF81D91C57700CB3790 /* IAGError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAGError.m; sourceTree = "<group>"; };
+		FFEFF8AE1D8D5DD900AF4B5A /* IAGAesGcm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAGAesGcm.h; sourceTree = "<group>"; };
+		FFEFF8AF1D8D5DD900AF4B5A /* IAGAesGcm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAGAesGcm.m; sourceTree = "<group>"; };
+		FFEFF8B21D8D643300AF4B5A /* IAGCipheredData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAGCipheredData.h; sourceTree = "<group>"; };
+		FFEFF8B31D8D643300AF4B5A /* IAGCipheredData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAGCipheredData.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +127,17 @@
 		3F3F4E6DA95E8AE1383D0417DFD6727D /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				3D5150F50714D52C53CB0A9E2DB68BFE /* ReplaceMe.m */,
+				FF0CFBF21D91B71500CB3790 /* IAGAesComponents.h */,
+				FF0CFBF31D91B71500CB3790 /* IAGAesComponents.m */,
+				FFEFF8AE1D8D5DD900AF4B5A /* IAGAesGcm.h */,
+				FFEFF8AF1D8D5DD900AF4B5A /* IAGAesGcm.m */,
+				FFEFF8B21D8D643300AF4B5A /* IAGCipheredData.h */,
+				FFEFF8B31D8D643300AF4B5A /* IAGCipheredData.m */,
+				FF0CFBF71D91C57700CB3790 /* IAGError.h */,
+				FF0CFBF81D91C57700CB3790 /* IAGError.m */,
+				FF0CFBEE1D91B40F00CB3790 /* IAGGcmMathComponents.h */,
+				FF0CFBEF1D91B40F00CB3790 /* IAGGcmMathComponents.m */,
+				FF0CFBF61D91BD5C00CB3790 /* IAGTypes.h */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -195,7 +224,12 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF0CFBF01D91B40F00CB3790 /* IAGGcmMathComponents.h in Headers */,
+				FFEFF8B41D8D643300AF4B5A /* IAGCipheredData.h in Headers */,
+				FFEFF8B01D8D5DD900AF4B5A /* IAGAesGcm.h in Headers */,
 				9E367B6C25C436D20235A5A006F2556D /* AesGcm-umbrella.h in Headers */,
+				FF0CFBF41D91B71500CB3790 /* IAGAesComponents.h in Headers */,
+				FF0CFBF91D91C57700CB3790 /* IAGError.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,8 +311,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF0CFBFA1D91C57700CB3790 /* IAGError.m in Sources */,
+				FFEFF8B51D8D643300AF4B5A /* IAGCipheredData.m in Sources */,
+				FF0CFBF11D91B40F00CB3790 /* IAGGcmMathComponents.m in Sources */,
+				FFEFF8B11D8D5DD900AF4B5A /* IAGAesGcm.m in Sources */,
 				8B5F2382AD34C4A54D851685645AC396 /* AesGcm-dummy.m in Sources */,
-				963FFAF0BCDC5DAFC0D67678698F0E34 /* ReplaceMe.m in Sources */,
+				FF0CFBF51D91B71500CB3790 /* IAGAesComponents.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
