@@ -13,16 +13,17 @@
 		8E1ED49561CD15E09DB2BA007779929A /* Pods-AesGcm_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E1792CC5222111C41FECA3E6550D887F /* Pods-AesGcm_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9E367B6C25C436D20235A5A006F2556D /* AesGcm-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D6B5403B89DEA46F0650AFB272BF7E02 /* AesGcm-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FC34C50409FF69D618A6D638ECD7EA65 /* Pods-AesGcm_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A204FCA29B525F83619E1C5EA0D30BC /* Pods-AesGcm_Tests-dummy.m */; };
-		FF0CFBF01D91B40F00CB3790 /* IAGGcmMathComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = FF0CFBEE1D91B40F00CB3790 /* IAGGcmMathComponents.h */; };
-		FF0CFBF11D91B40F00CB3790 /* IAGGcmMathComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0CFBEF1D91B40F00CB3790 /* IAGGcmMathComponents.m */; };
-		FF0CFBF41D91B71500CB3790 /* IAGAesComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = FF0CFBF21D91B71500CB3790 /* IAGAesComponents.h */; };
-		FF0CFBF51D91B71500CB3790 /* IAGAesComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0CFBF31D91B71500CB3790 /* IAGAesComponents.m */; };
 		FF0CFBF91D91C57700CB3790 /* IAGError.h in Headers */ = {isa = PBXBuildFile; fileRef = FF0CFBF71D91C57700CB3790 /* IAGError.h */; };
 		FF0CFBFA1D91C57700CB3790 /* IAGError.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0CFBF81D91C57700CB3790 /* IAGError.m */; };
-		FF33EF7E1D97EB2900D47A89 /* IAGBitwiseComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = FF33EF7C1D97EB2900D47A89 /* IAGBitwiseComponents.h */; };
-		FF33EF7F1D97EB2900D47A89 /* IAGBitwiseComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = FF33EF7D1D97EB2900D47A89 /* IAGBitwiseComponents.m */; };
-		FF33EF861D97F48E00D47A89 /* IAGGcmEndianness.h in Headers */ = {isa = PBXBuildFile; fileRef = FF33EF841D97F48E00D47A89 /* IAGGcmEndianness.h */; };
-		FF33EF871D97F48E00D47A89 /* IAGGcmEndianness.m in Sources */ = {isa = PBXBuildFile; fileRef = FF33EF851D97F48E00D47A89 /* IAGGcmEndianness.m */; };
+		FF33EF931D9817A200D47A89 /* IAGAesComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = FF33EF8A1D9817A200D47A89 /* IAGAesComponents.h */; };
+		FF33EF941D9817A200D47A89 /* IAGAesComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = FF33EF8B1D9817A200D47A89 /* IAGAesComponents.m */; };
+		FF33EF951D9817A200D47A89 /* IAGBitwiseComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = FF33EF8C1D9817A200D47A89 /* IAGBitwiseComponents.h */; };
+		FF33EF961D9817A200D47A89 /* IAGBitwiseComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = FF33EF8D1D9817A200D47A89 /* IAGBitwiseComponents.m */; };
+		FF33EF971D9817A200D47A89 /* IAGGcmEndianness.h in Headers */ = {isa = PBXBuildFile; fileRef = FF33EF8E1D9817A200D47A89 /* IAGGcmEndianness.h */; };
+		FF33EF981D9817A200D47A89 /* IAGGcmEndianness.m in Sources */ = {isa = PBXBuildFile; fileRef = FF33EF8F1D9817A200D47A89 /* IAGGcmEndianness.m */; };
+		FF33EF991D9817A200D47A89 /* IAGGcmMathComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = FF33EF901D9817A200D47A89 /* IAGGcmMathComponents.h */; };
+		FF33EF9A1D9817A200D47A89 /* IAGGcmMathComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = FF33EF911D9817A200D47A89 /* IAGGcmMathComponents.m */; };
+		FF33EF9B1D9817A200D47A89 /* IAGTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = FF33EF921D9817A200D47A89 /* IAGTypes.h */; };
 		FFEFF8B01D8D5DD900AF4B5A /* IAGAesGcm.h in Headers */ = {isa = PBXBuildFile; fileRef = FFEFF8AE1D8D5DD900AF4B5A /* IAGAesGcm.h */; };
 		FFEFF8B11D8D5DD900AF4B5A /* IAGAesGcm.m in Sources */ = {isa = PBXBuildFile; fileRef = FFEFF8AF1D8D5DD900AF4B5A /* IAGAesGcm.m */; };
 		FFEFF8B41D8D643300AF4B5A /* IAGCipheredData.h in Headers */ = {isa = PBXBuildFile; fileRef = FFEFF8B21D8D643300AF4B5A /* IAGCipheredData.h */; };
@@ -60,17 +61,17 @@
 		F0368FCE1DFF29E2DA5DD8D031D5D755 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F406977BB011990E282A500D3AF2D644 /* AesGcm-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AesGcm-dummy.m"; sourceTree = "<group>"; };
 		F966F0D384E363EC6C45833A22CC4D8C /* Pods-AesGcm_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AesGcm_Tests-resources.sh"; sourceTree = "<group>"; };
-		FF0CFBEE1D91B40F00CB3790 /* IAGGcmMathComponents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAGGcmMathComponents.h; sourceTree = "<group>"; };
-		FF0CFBEF1D91B40F00CB3790 /* IAGGcmMathComponents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAGGcmMathComponents.m; sourceTree = "<group>"; };
-		FF0CFBF21D91B71500CB3790 /* IAGAesComponents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAGAesComponents.h; sourceTree = "<group>"; };
-		FF0CFBF31D91B71500CB3790 /* IAGAesComponents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAGAesComponents.m; sourceTree = "<group>"; };
-		FF0CFBF61D91BD5C00CB3790 /* IAGTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IAGTypes.h; sourceTree = "<group>"; };
 		FF0CFBF71D91C57700CB3790 /* IAGError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAGError.h; sourceTree = "<group>"; };
 		FF0CFBF81D91C57700CB3790 /* IAGError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAGError.m; sourceTree = "<group>"; };
-		FF33EF7C1D97EB2900D47A89 /* IAGBitwiseComponents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAGBitwiseComponents.h; sourceTree = "<group>"; };
-		FF33EF7D1D97EB2900D47A89 /* IAGBitwiseComponents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAGBitwiseComponents.m; sourceTree = "<group>"; };
-		FF33EF841D97F48E00D47A89 /* IAGGcmEndianness.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAGGcmEndianness.h; sourceTree = "<group>"; };
-		FF33EF851D97F48E00D47A89 /* IAGGcmEndianness.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAGGcmEndianness.m; sourceTree = "<group>"; };
+		FF33EF8A1D9817A200D47A89 /* IAGAesComponents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAGAesComponents.h; sourceTree = "<group>"; };
+		FF33EF8B1D9817A200D47A89 /* IAGAesComponents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAGAesComponents.m; sourceTree = "<group>"; };
+		FF33EF8C1D9817A200D47A89 /* IAGBitwiseComponents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAGBitwiseComponents.h; sourceTree = "<group>"; };
+		FF33EF8D1D9817A200D47A89 /* IAGBitwiseComponents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAGBitwiseComponents.m; sourceTree = "<group>"; };
+		FF33EF8E1D9817A200D47A89 /* IAGGcmEndianness.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAGGcmEndianness.h; sourceTree = "<group>"; };
+		FF33EF8F1D9817A200D47A89 /* IAGGcmEndianness.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAGGcmEndianness.m; sourceTree = "<group>"; };
+		FF33EF901D9817A200D47A89 /* IAGGcmMathComponents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAGGcmMathComponents.h; sourceTree = "<group>"; };
+		FF33EF911D9817A200D47A89 /* IAGGcmMathComponents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAGGcmMathComponents.m; sourceTree = "<group>"; };
+		FF33EF921D9817A200D47A89 /* IAGTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAGTypes.h; sourceTree = "<group>"; };
 		FFEFF8AE1D8D5DD900AF4B5A /* IAGAesGcm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAGAesGcm.h; sourceTree = "<group>"; };
 		FFEFF8AF1D8D5DD900AF4B5A /* IAGAesGcm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAGAesGcm.m; sourceTree = "<group>"; };
 		FFEFF8B21D8D643300AF4B5A /* IAGCipheredData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAGCipheredData.h; sourceTree = "<group>"; };
@@ -135,21 +136,13 @@
 		3F3F4E6DA95E8AE1383D0417DFD6727D /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				FF0CFBF21D91B71500CB3790 /* IAGAesComponents.h */,
-				FF0CFBF31D91B71500CB3790 /* IAGAesComponents.m */,
+				FF33EF891D98177B00D47A89 /* Components */,
 				FFEFF8AE1D8D5DD900AF4B5A /* IAGAesGcm.h */,
 				FFEFF8AF1D8D5DD900AF4B5A /* IAGAesGcm.m */,
-				FF33EF7C1D97EB2900D47A89 /* IAGBitwiseComponents.h */,
-				FF33EF7D1D97EB2900D47A89 /* IAGBitwiseComponents.m */,
 				FFEFF8B21D8D643300AF4B5A /* IAGCipheredData.h */,
 				FFEFF8B31D8D643300AF4B5A /* IAGCipheredData.m */,
 				FF0CFBF71D91C57700CB3790 /* IAGError.h */,
 				FF0CFBF81D91C57700CB3790 /* IAGError.m */,
-				FF33EF841D97F48E00D47A89 /* IAGGcmEndianness.h */,
-				FF33EF851D97F48E00D47A89 /* IAGGcmEndianness.m */,
-				FF0CFBEE1D91B40F00CB3790 /* IAGGcmMathComponents.h */,
-				FF0CFBEF1D91B40F00CB3790 /* IAGGcmMathComponents.m */,
-				FF0CFBF61D91BD5C00CB3790 /* IAGTypes.h */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -221,6 +214,22 @@
 			path = ../..;
 			sourceTree = "<group>";
 		};
+		FF33EF891D98177B00D47A89 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				FF33EF8A1D9817A200D47A89 /* IAGAesComponents.h */,
+				FF33EF8B1D9817A200D47A89 /* IAGAesComponents.m */,
+				FF33EF8C1D9817A200D47A89 /* IAGBitwiseComponents.h */,
+				FF33EF8D1D9817A200D47A89 /* IAGBitwiseComponents.m */,
+				FF33EF8E1D9817A200D47A89 /* IAGGcmEndianness.h */,
+				FF33EF8F1D9817A200D47A89 /* IAGGcmEndianness.m */,
+				FF33EF901D9817A200D47A89 /* IAGGcmMathComponents.h */,
+				FF33EF911D9817A200D47A89 /* IAGGcmMathComponents.m */,
+				FF33EF921D9817A200D47A89 /* IAGTypes.h */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -236,14 +245,15 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF0CFBF01D91B40F00CB3790 /* IAGGcmMathComponents.h in Headers */,
 				FFEFF8B41D8D643300AF4B5A /* IAGCipheredData.h in Headers */,
 				FFEFF8B01D8D5DD900AF4B5A /* IAGAesGcm.h in Headers */,
+				FF33EF971D9817A200D47A89 /* IAGGcmEndianness.h in Headers */,
+				FF33EF951D9817A200D47A89 /* IAGBitwiseComponents.h in Headers */,
+				FF33EF991D9817A200D47A89 /* IAGGcmMathComponents.h in Headers */,
 				9E367B6C25C436D20235A5A006F2556D /* AesGcm-umbrella.h in Headers */,
-				FF33EF861D97F48E00D47A89 /* IAGGcmEndianness.h in Headers */,
-				FF33EF7E1D97EB2900D47A89 /* IAGBitwiseComponents.h in Headers */,
-				FF0CFBF41D91B71500CB3790 /* IAGAesComponents.h in Headers */,
+				FF33EF9B1D9817A200D47A89 /* IAGTypes.h in Headers */,
 				FF0CFBF91D91C57700CB3790 /* IAGError.h in Headers */,
+				FF33EF931D9817A200D47A89 /* IAGAesComponents.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,13 +336,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF0CFBFA1D91C57700CB3790 /* IAGError.m in Sources */,
+				FF33EF9A1D9817A200D47A89 /* IAGGcmMathComponents.m in Sources */,
 				FFEFF8B51D8D643300AF4B5A /* IAGCipheredData.m in Sources */,
-				FF0CFBF11D91B40F00CB3790 /* IAGGcmMathComponents.m in Sources */,
 				FFEFF8B11D8D5DD900AF4B5A /* IAGAesGcm.m in Sources */,
-				FF33EF871D97F48E00D47A89 /* IAGGcmEndianness.m in Sources */,
+				FF33EF961D9817A200D47A89 /* IAGBitwiseComponents.m in Sources */,
 				8B5F2382AD34C4A54D851685645AC396 /* AesGcm-dummy.m in Sources */,
-				FF33EF7F1D97EB2900D47A89 /* IAGBitwiseComponents.m in Sources */,
-				FF0CFBF51D91B71500CB3790 /* IAGAesComponents.m in Sources */,
+				FF33EF981D9817A200D47A89 /* IAGGcmEndianness.m in Sources */,
+				FF33EF941D9817A200D47A89 /* IAGAesComponents.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
