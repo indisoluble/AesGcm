@@ -21,4 +21,18 @@ NSString * const IAGErrorDomain = @"IAGErrorDomain";
                            userInfo:nil];
 }
 
++ (NSError *)errorInputDataLengthNotSupported
+{
+    return [NSError errorWithDomain:IAGErrorDomain
+                               code:IAGErrorCodeInputDataLengthNotSupported
+                           userInfo:nil];
+}
+
++ (NSError *)errorAuthenticationTagsNotIdentical
+{
+    return [NSError errorWithDomain:IAGErrorDomain
+                               code:IAGErrorCodeAuthenticationTagsNotIdentical
+                           userInfo:nil];
+}
+
 @end

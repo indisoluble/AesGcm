@@ -56,6 +56,17 @@ NS_ASSUME_NONNULL_BEGIN
                       key:(NSData *)key
                     error:(NSError **)error;
 
+/**
+ Increment the right-most 32 bits of the input buffer, regarded as an integer (modulo 2^32), and leave the remaining left-most bits unchanged.
+
+ @param incBuffer Output parameter
+ @param buffer Input paramater
+ @param size Size of both buffers, it has to be greater than or equal to sizeof(IAGUInt32Type)
+ */
++ (void)get32BitIncrementedBuffer:(IAGUCharType *)incBuffer
+                       withBuffer:(IAGUCharType *)buffer
+                             size:(IAGSizeType)size;
+
 @end
 
 NS_ASSUME_NONNULL_END

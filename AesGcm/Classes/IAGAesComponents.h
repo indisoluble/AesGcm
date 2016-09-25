@@ -23,7 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
 
  @param cipheredBlock Output parameter with the resulting ciphered data
  @param block Input parameter with the data to cipher
- @param key Key to cipher the input data
+ @param key Key used to cipher the data with length: kCCKeySizeAES128 (16), kCCKeySizeAES192 (24) or kCCKeySizeAES256 (32) bytes
  @param error Set to a value if the operation fails
  
  @return YES if the operation is successful, NO in other case

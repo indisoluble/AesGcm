@@ -12,6 +12,10 @@
 typedef NS_ENUM(NSInteger, IAGErrorCode) {
     /** @see [IAGErrorFactory errorAESFailed] */
     IAGErrorCodeAESFailed = 0,
+    /** @see [IAGErrorFactory errorInputDataLengthNotSupported] */
+    IAGErrorCodeInputDataLengthNotSupported,
+    /** @see [IAGErrorFactory errorAuthenticationTagsNotIdentical] */
+    IAGErrorCodeAuthenticationTagsNotIdentical
 };
 
 NS_ASSUME_NONNULL_BEGIN
@@ -31,6 +35,20 @@ extern NSString * const IAGErrorDomain;
  @see [IAGAesComponents getCipheredBlock:byUsingAESOnBlock:withKey:error:]
  */
 + (NSError *)errorAESFailed;
+
+/**
+ Error returned when the data passed to cipher/decipher methods does not have a supported length.
+ 
+ @see IAGAesGcm
+ */
++ (NSError *)errorInputDataLengthNotSupported;
+
+/**
+ Error returned when the authentication tag generated after deciphering some data is not identical to the tag passed by parameter.
+
+ @see [IAGAesGcm plainDataByAuthenticatedDecryptingCipheredData:withAdditionalAuthenticatedData:initializationVector:key:error:]
+ */
++ (NSError *)errorAuthenticationTagsNotIdentical;
 
 @end
 

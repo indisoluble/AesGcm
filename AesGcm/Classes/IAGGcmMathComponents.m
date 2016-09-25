@@ -9,7 +9,9 @@
 #import "IAGGcmMathComponents.h"
 
 #import "IAGAesComponents.h"
+#import "IAGBitwiseComponents.h"
 #import "IAGError.h"
+#import "IAGGcmEndianness.h"
 
 @implementation IAGGcmMathComponents
 
@@ -27,13 +29,13 @@
     //    X = X 1 || X 2 || ... || X m-1 || X m.
     // 2. Let Y0 be the “zero block,” 0128.
     IAGBlockType y;
-    memset(y, 0, sizeof(IAGBlockType));
+    memset(y, 0x00, sizeof(IAGBlockType));
 
     // 3. For i = 1, ..., m, let Yi = (Yi-1 ⊕ Xi) • H.
     for (IAGSizeType i = 0; i < bufferSize; i += sizeof(IAGBlockType))
     {
         IAGBlockType xor;
-        [IAGGcmMathComponents getXorBlock:xor withBlock:y andBlock:(buffer + i)];
+        [IAGBitwiseComponents getXorBlock:xor withBlock:y andBlock:(buffer + i)];
 
         [IAGGcmMathComponents getProductBlock:y byMultiplyingBlock:xor andBlock:hashSubkey];
     }
@@ -86,7 +88,7 @@
         {
             return NO;
         }
-        [IAGGcmMathComponents getXorBlock:(y + i)
+        [IAGBitwiseComponents getXorBlock:(y + i)
                                 withBlock:(buffer + i)
                                  andBlock:cipheredBlock];
 
@@ -110,12 +112,12 @@
         }
 
         IAGUCharType msb[uncompleteBlockSize];
-        [IAGGcmMathComponents getMostSignificantBytes:msb
+        [IAGBitwiseComponents getMostSignificantBytes:msb
                                              withSize:uncompleteBlockSize
                                              inBuffer:cipheredBlock
                                              withSize:sizeof(IAGBlockType)];
 
-        [IAGGcmMathComponents getXorBuffer:(y + bufferSize - uncompleteBlockSize)
+        [IAGBitwiseComponents getXorBuffer:(y + bufferSize - uncompleteBlockSize)
                                 withBuffer:(buffer + bufferSize - uncompleteBlockSize)
                                     buffer:msb
                                 bufferSize:uncompleteBlockSize];
@@ -124,56 +126,6 @@
     memcpy(gcounterBuffer, y, bufferSize);
 
     return YES;
-}
-
-#pragma mark - Private class methods
-
-+ (void)getProductBlock:(IAGBlockType)product
-     byMultiplyingBlock:(IAGBlockType)x
-               andBlock:(IAGBlockType)y
-{
-    // Let R be the bit string 11100001 || 0^120
-    IAGBlockType r;
-    memset(r, 0, sizeof(IAGBlockType));
-    r[0] = 0xE1;
-
-    // Steps:
-    // 1. Let x0 x1 ... x127 denote the sequence of bits in X
-    // 2. Let Z0 = 0^128 and V0 = Y.
-    IAGBlockType z;
-    memset(z, 0, sizeof(IAGBlockType));
-
-    IAGBlockType v;
-    memcpy(v, y, sizeof(IAGBlockType));
-
-    // 3. For i = 0 to 127, calculate blocks Zi+1 and Vi+1 as follows:
-    for (IAGUInt8Type i = 0; i <= IAGMaxBitPositionInABlock; i++)
-    {
-        // Zi+1 = Zi if xi = 0; Zi ⊕ Vi if xi = 1.
-        if ([IAGGcmMathComponents isMostSignificantBitActivatedAtPosition:i inBlock:x])
-        {
-            IAGBlockType zi;
-            memcpy(zi, z, sizeof(IAGBlockType));
-
-            [IAGGcmMathComponents getXorBlock:z withBlock:zi andBlock:v];
-        }
-
-        // Vi+1 = Vi >> 1 if LSB1(Vi) = 0; (Vi >> 1) ⊕ R if LSB1(Vi) = 1.
-        IAGBlockType vi;
-        memcpy(vi, v, sizeof(IAGBlockType));
-
-        [IAGGcmMathComponents getSingleRightShiftedBlock:v withBlock:vi];
-
-        if ([IAGGcmMathComponents isLeastSignificantBitActivatedAtPosition:i inBlock:vi])
-        {
-            memcpy(vi, v, sizeof(IAGBlockType));
-
-            [IAGGcmMathComponents getXorBlock:v withBlock:vi andBlock:r];
-        }
-    }
-
-    // 4. Return Z128.
-    memcpy(product, z, sizeof(IAGBlockType));
 }
 
 + (void)get32BitIncrementedBuffer:(IAGUCharType *)incBuffer
@@ -188,18 +140,18 @@
     // remain unchanged.
 
     IAGUInt32Type lsb;
-    [IAGGcmMathComponents getLeastSignificantBytes:&lsb
+    [IAGBitwiseComponents getLeastSignificantBytes:&lsb
                                           withSize:sizeof(IAGUInt32Type)
                                           inBuffer:buffer
                                           withSize:size];
 
     // Notice that the increment is modulo 2^32, therefore even if it overflows, the result is
     // still correct
-    lsb = CFSwapInt32HostToBig(CFSwapInt32BigToHost(lsb) + 1);
+    lsb = [IAGGcmEndianness swapUInt32HostToGcm:([IAGGcmEndianness swapUInt32GcmToHost:lsb] + 1)];
 
     if (size != sizeof(IAGUInt32Type))
     {
-        [IAGGcmMathComponents getMostSignificantBytes:incBuffer
+        [IAGBitwiseComponents getMostSignificantBytes:incBuffer
                                              withSize:(size - sizeof(IAGUInt32Type))
                                              inBuffer:buffer
                                              withSize:size];
@@ -207,75 +159,54 @@
     memcpy(incBuffer + (size - sizeof(IAGUInt32Type)), &lsb, sizeof(IAGUInt32Type));
 }
 
-+ (void)getXorBlock:(IAGBlockType)buffer
-          withBlock:(IAGBlockType)value1
-           andBlock:(IAGBlockType)value2
-{
-    [IAGGcmMathComponents getXorBuffer:buffer
-                            withBuffer:value1
-                                buffer:value2
-                            bufferSize:sizeof(IAGBlockType)];
-}
+#pragma mark - Private class methods
 
-+ (void)getXorBuffer:(IAGUCharType *)buffer
-          withBuffer:(IAGUCharType *)value1
-              buffer:(IAGUCharType *)value2
-          bufferSize:(IAGSizeType)bufferSize
++ (void)getProductBlock:(IAGBlockType)product
+     byMultiplyingBlock:(IAGBlockType)x
+               andBlock:(IAGBlockType)y
 {
-    for (IAGSizeType i = 0; i < bufferSize; i++)
+    // Let R be the bit string 11100001 || 0^120
+    IAGBlockType r;
+    memset(r, 0x00, sizeof(IAGBlockType));
+    r[0] = 0xE1;
+
+    // Steps:
+    // 1. Let x0 x1 ... x127 denote the sequence of bits in X
+    // 2. Let Z0 = 0^128 and V0 = Y.
+    IAGBlockType z;
+    memset(z, 0x00, sizeof(IAGBlockType));
+
+    IAGBlockType v;
+    memcpy(v, y, sizeof(IAGBlockType));
+
+    // 3. For i = 0 to 127, calculate blocks Zi+1 and Vi+1 as follows:
+    for (IAGUInt8Type i = 0; i <= IAGMaxBitPositionInABlock; i++)
     {
-        buffer[i] = (value1[i] ^ value2[i]);
+        // Zi+1 = Zi if xi = 0; Zi ⊕ Vi if xi = 1.
+        if ([IAGBitwiseComponents isMostSignificantBitActivatedAtPosition:i inBlock:x])
+        {
+            IAGBlockType zi;
+            memcpy(zi, z, sizeof(IAGBlockType));
+
+            [IAGBitwiseComponents getXorBlock:z withBlock:zi andBlock:v];
+        }
+
+        // Vi+1 = Vi >> 1 if LSB1(Vi) = 0; (Vi >> 1) ⊕ R if LSB1(Vi) = 1.
+        IAGBlockType vi;
+        memcpy(vi, v, sizeof(IAGBlockType));
+
+        [IAGBitwiseComponents getSingleRightShiftedBlock:v withBlock:vi];
+
+        if ([IAGBitwiseComponents isLeastSignificantBitActivatedAtPosition:i inBlock:vi])
+        {
+            memcpy(vi, v, sizeof(IAGBlockType));
+
+            [IAGBitwiseComponents getXorBlock:v withBlock:vi andBlock:r];
+        }
     }
-}
 
-+ (void)getSingleRightShiftedBlock:(IAGBlockType)shiftedBlock withBlock:(IAGBlockType)block
-{
-    memset(shiftedBlock, 0, sizeof(IAGUCharType));
-    memcpy(shiftedBlock + sizeof(IAGUCharType), block, sizeof(IAGBlockType) - sizeof(IAGUCharType));
-}
-
-+ (void)getMostSignificantBytes:(IAGUCharType *)msb
-                       withSize:(IAGSizeType)msbSyze
-                       inBuffer:(IAGUCharType *)buffer
-                       withSize:(IAGSizeType)bufferSize
-{
-    NSParameterAssert(msbSyze <= bufferSize);
-
-    memcpy(msb, buffer, msbSyze);
-}
-
-+ (void)getLeastSignificantBytes:(IAGUCharType *)lsb
-                        withSize:(IAGSizeType)lsbSyze
-                        inBuffer:(IAGUCharType *)buffer
-                        withSize:(IAGSizeType)bufferSize
-{
-    NSParameterAssert(lsbSyze <= bufferSize);
-
-    memcpy(lsb, buffer + (bufferSize - lsbSyze), lsbSyze);
-}
-
-+ (BOOL)isMostSignificantBitActivatedAtPosition:(IAGUInt8Type)position
-                                        inBlock:(IAGBlockType)block
-{
-    NSParameterAssert(position <= IAGMaxBitPositionInABlock);
-
-    IAGUCharType mostSignificantByte = block[position / IAGBitsInUChar];
-    IAGUCharType mask = 0x80 >> (position % IAGBitsInUChar);
-    IAGUCharType mostSignificantBit = (mostSignificantByte & mask);
-
-    return (mostSignificantBit != 0);
-}
-
- + (BOOL)isLeastSignificantBitActivatedAtPosition:(IAGUInt8Type)position
-                                          inBlock:(IAGBlockType)block
-{
-    NSParameterAssert(position <= IAGMaxBitPositionInABlock);
-
-    IAGUCharType leastSignificantByte = block[IAGMaxBitPositionInABlock - (position / IAGBitsInUChar)];
-    IAGUCharType mask = 0x01 << (position % IAGBitsInUChar);
-    IAGUCharType leastSignificantBit = (leastSignificantByte & mask);
-
-    return (leastSignificantBit != 0);
+    // 4. Return Z128.
+    memcpy(product, z, sizeof(IAGBlockType));
 }
 
 @end
