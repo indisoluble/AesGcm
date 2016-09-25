@@ -39,6 +39,8 @@ NS_ASSUME_NONNULL_BEGIN
                      authenticationTag:(const void *)authenticationTag
                authenticationTagLength:(IAGAuthenticationTagLength)authenticationTagLength;
 
+- (BOOL)isEqualToCipheredData:(IAGCipheredData *)object;
+
 @end
 
 NS_ASSUME_NONNULL_END

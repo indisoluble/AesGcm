@@ -11,6 +11,11 @@
 #import "IAGTypes.h"
 
 /**
+ Number of bits in a byte ... obviously 8 ... the only purpose of this constant is to easily track where this value is used and what for.
+ */
+extern const IAGUInt8Type IAGBitsInUChar;
+
+/**
  Position of the last bit in a block.
  
  @see [IAGBitwiseComponents isMostSignificantBitActivatedAtPosition:inBlock:]

@@ -7,27 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		081A79F089CEF2BA86EC8D0E0BDF3D98 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		3B555B98896D81CFB203B0836CBFBCBB /* IAGCipheredData.m in Sources */ = {isa = PBXBuildFile; fileRef = C700E002540B2FA8DC84C2E08768FFF4 /* IAGCipheredData.m */; };
 		42E202AE825DA15542260701F7C3A051 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		8B5F2382AD34C4A54D851685645AC396 /* AesGcm-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F406977BB011990E282A500D3AF2D644 /* AesGcm-dummy.m */; };
+		4B24FAD880299CBB31898EB3305886F8 /* AesGcm-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F406977BB011990E282A500D3AF2D644 /* AesGcm-dummy.m */; };
+		6CD809EA723D3C854BDA4CB5ADCFEEF0 /* IAGError.m in Sources */ = {isa = PBXBuildFile; fileRef = 4041591EBBC650BB5D46DFBEBA49DB41 /* IAGError.m */; };
+		6EBF52B83512809CC64ABBF3683F5F0A /* AesGcm-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D6B5403B89DEA46F0650AFB272BF7E02 /* AesGcm-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7224CFF4B0C1654CE7CD4251558D9245 /* IAGAesComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A4540C82336A3CEB3E72A84FC9DDB54 /* IAGAesComponents.m */; };
+		836396A0B23A43F236117AB212462E33 /* IAGAesGcm.h in Headers */ = {isa = PBXBuildFile; fileRef = E99656C86385E11EAE14DD53A22241E2 /* IAGAesGcm.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8C2E8AA725DC42F6446E79B126A50AD2 /* IAGGcmEndianness.h in Headers */ = {isa = PBXBuildFile; fileRef = D975D01BDA6C4E8B9D1E7B720D319CDA /* IAGGcmEndianness.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8E1ED49561CD15E09DB2BA007779929A /* Pods-AesGcm_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E1792CC5222111C41FECA3E6550D887F /* Pods-AesGcm_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9E367B6C25C436D20235A5A006F2556D /* AesGcm-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D6B5403B89DEA46F0650AFB272BF7E02 /* AesGcm-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		985018D7278BFD429D2565EAA81EBC81 /* IAGError.h in Headers */ = {isa = PBXBuildFile; fileRef = 831792F96B8E28F6D70FDA02CA12C81F /* IAGError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		98B319AA211ECA5DB72EC6D3A4DB79E8 /* IAGBitwiseComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = 337FD950BACA3D7C2FBED9CE32C6811B /* IAGBitwiseComponents.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A01BF9EA696D70EF4E419DF42A90FBB0 /* IAGGcmMathComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = A9D75D3F4C08537D2E3D13FB5DA06EA9 /* IAGGcmMathComponents.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A5CE5CE6ED21F5B166B904EE6FCF2B03 /* IAGGcmMathComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F10BDE6C451148CE5D15EDF8C2A1AC1 /* IAGGcmMathComponents.m */; };
+		ACC20AE76418B9D7EAC3DFEC3DD700F3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		BEAB3F67264E927F420F5B94DD778C95 /* IAGBitwiseComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = D19FE15EA5A11A8E1ADEBD862C2E7F1D /* IAGBitwiseComponents.m */; };
+		BFADBC0A56636980909E8A91031D3652 /* IAGTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 92835CAE8FF4E77D0660533C19786C6B /* IAGTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E2AD27D0C81F5863E5319F0534442E19 /* IAGGcmEndianness.m in Sources */ = {isa = PBXBuildFile; fileRef = 412B95FD3EE08DF546DE1348D4A62103 /* IAGGcmEndianness.m */; };
+		E93745C37C8748BE5667F835E6651612 /* IAGCipheredData.h in Headers */ = {isa = PBXBuildFile; fileRef = D7D29DB5E9236493DF1F688338B7B6B1 /* IAGCipheredData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EB83743B439D59D97E2F2308791FF5AF /* IAGAesGcm.m in Sources */ = {isa = PBXBuildFile; fileRef = C47861094D8CCA8B4D272FA0E1F6A10A /* IAGAesGcm.m */; };
+		EF2F73D067AE416DF206EE006E13C0EB /* IAGAesComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B4D034A9201A5789DB96EB8CC10513E /* IAGAesComponents.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FC34C50409FF69D618A6D638ECD7EA65 /* Pods-AesGcm_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A204FCA29B525F83619E1C5EA0D30BC /* Pods-AesGcm_Tests-dummy.m */; };
-		FF0CFBF91D91C57700CB3790 /* IAGError.h in Headers */ = {isa = PBXBuildFile; fileRef = FF0CFBF71D91C57700CB3790 /* IAGError.h */; };
-		FF0CFBFA1D91C57700CB3790 /* IAGError.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0CFBF81D91C57700CB3790 /* IAGError.m */; };
-		FF33EF931D9817A200D47A89 /* IAGAesComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = FF33EF8A1D9817A200D47A89 /* IAGAesComponents.h */; };
-		FF33EF941D9817A200D47A89 /* IAGAesComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = FF33EF8B1D9817A200D47A89 /* IAGAesComponents.m */; };
-		FF33EF951D9817A200D47A89 /* IAGBitwiseComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = FF33EF8C1D9817A200D47A89 /* IAGBitwiseComponents.h */; };
-		FF33EF961D9817A200D47A89 /* IAGBitwiseComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = FF33EF8D1D9817A200D47A89 /* IAGBitwiseComponents.m */; };
-		FF33EF971D9817A200D47A89 /* IAGGcmEndianness.h in Headers */ = {isa = PBXBuildFile; fileRef = FF33EF8E1D9817A200D47A89 /* IAGGcmEndianness.h */; };
-		FF33EF981D9817A200D47A89 /* IAGGcmEndianness.m in Sources */ = {isa = PBXBuildFile; fileRef = FF33EF8F1D9817A200D47A89 /* IAGGcmEndianness.m */; };
-		FF33EF991D9817A200D47A89 /* IAGGcmMathComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = FF33EF901D9817A200D47A89 /* IAGGcmMathComponents.h */; };
-		FF33EF9A1D9817A200D47A89 /* IAGGcmMathComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = FF33EF911D9817A200D47A89 /* IAGGcmMathComponents.m */; };
-		FF33EF9B1D9817A200D47A89 /* IAGTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = FF33EF921D9817A200D47A89 /* IAGTypes.h */; };
-		FFEFF8B01D8D5DD900AF4B5A /* IAGAesGcm.h in Headers */ = {isa = PBXBuildFile; fileRef = FFEFF8AE1D8D5DD900AF4B5A /* IAGAesGcm.h */; };
-		FFEFF8B11D8D5DD900AF4B5A /* IAGAesGcm.m in Sources */ = {isa = PBXBuildFile; fileRef = FFEFF8AF1D8D5DD900AF4B5A /* IAGAesGcm.m */; };
-		FFEFF8B41D8D643300AF4B5A /* IAGCipheredData.h in Headers */ = {isa = PBXBuildFile; fileRef = FFEFF8B21D8D643300AF4B5A /* IAGCipheredData.h */; };
-		FFEFF8B51D8D643300AF4B5A /* IAGCipheredData.m in Sources */ = {isa = PBXBuildFile; fileRef = FFEFF8B31D8D643300AF4B5A /* IAGCipheredData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +35,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 154A67240ED2CD66D7C3A1043B3654AE;
+			remoteGlobalIDString = E3092E9D1C9F9B99D0DFB39C24F28AB4;
 			remoteInfo = AesGcm;
 		};
 /* End PBXContainerItemProxy section */
@@ -45,45 +45,45 @@
 		13BC53200F11672E18D10717FC830E24 /* AesGcm.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AesGcm.xcconfig; sourceTree = "<group>"; };
 		259BA140B70F75DDA62E8D63E37D36A8 /* Pods-AesGcm_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AesGcm_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		309DF19C4A34BF2561A473EE53B50355 /* Pods-AesGcm_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AesGcm_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		337FD950BACA3D7C2FBED9CE32C6811B /* IAGBitwiseComponents.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = IAGBitwiseComponents.h; sourceTree = "<group>"; };
 		3A204FCA29B525F83619E1C5EA0D30BC /* Pods-AesGcm_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AesGcm_Tests-dummy.m"; sourceTree = "<group>"; };
+		4041591EBBC650BB5D46DFBEBA49DB41 /* IAGError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = IAGError.m; sourceTree = "<group>"; };
+		412B95FD3EE08DF546DE1348D4A62103 /* IAGGcmEndianness.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = IAGGcmEndianness.m; sourceTree = "<group>"; };
 		551039037E11537558F6A0AF539E7115 /* Pods-AesGcm_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AesGcm_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		6A4540C82336A3CEB3E72A84FC9DDB54 /* IAGAesComponents.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = IAGAesComponents.m; sourceTree = "<group>"; };
 		7984AEE1D994A7F741C7A0D9498ABD0C /* AesGcm.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AesGcm.modulemap; sourceTree = "<group>"; };
+		7B4D034A9201A5789DB96EB8CC10513E /* IAGAesComponents.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = IAGAesComponents.h; sourceTree = "<group>"; };
+		831792F96B8E28F6D70FDA02CA12C81F /* IAGError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = IAGError.h; sourceTree = "<group>"; };
+		8F10BDE6C451148CE5D15EDF8C2A1AC1 /* IAGGcmMathComponents.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = IAGGcmMathComponents.m; sourceTree = "<group>"; };
+		92835CAE8FF4E77D0660533C19786C6B /* IAGTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = IAGTypes.h; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		993EB8D69ED07220031F844A83AC21E8 /* Pods_AesGcm_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AesGcm_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4694781A23FF585D49927593B680DE5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9D75D3F4C08537D2E3D13FB5DA06EA9 /* IAGGcmMathComponents.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = IAGGcmMathComponents.h; sourceTree = "<group>"; };
 		BC49C1FCEE243F7F45EFABD4AFC7CFD0 /* AesGcm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AesGcm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDF9214921D40B68FF84C9C453EB0403 /* AesGcm-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AesGcm-prefix.pch"; sourceTree = "<group>"; };
+		C47861094D8CCA8B4D272FA0E1F6A10A /* IAGAesGcm.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = IAGAesGcm.m; sourceTree = "<group>"; };
+		C700E002540B2FA8DC84C2E08768FFF4 /* IAGCipheredData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = IAGCipheredData.m; sourceTree = "<group>"; };
 		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D19FE15EA5A11A8E1ADEBD862C2E7F1D /* IAGBitwiseComponents.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = IAGBitwiseComponents.m; sourceTree = "<group>"; };
 		D6B5403B89DEA46F0650AFB272BF7E02 /* AesGcm-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AesGcm-umbrella.h"; sourceTree = "<group>"; };
 		D6E3BD4B3E19D255521F5A43CDB71F26 /* Pods-AesGcm_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AesGcm_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		D7D29DB5E9236493DF1F688338B7B6B1 /* IAGCipheredData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = IAGCipheredData.h; sourceTree = "<group>"; };
+		D975D01BDA6C4E8B9D1E7B720D319CDA /* IAGGcmEndianness.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = IAGGcmEndianness.h; sourceTree = "<group>"; };
 		E1792CC5222111C41FECA3E6550D887F /* Pods-AesGcm_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AesGcm_Tests-umbrella.h"; sourceTree = "<group>"; };
+		E99656C86385E11EAE14DD53A22241E2 /* IAGAesGcm.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = IAGAesGcm.h; sourceTree = "<group>"; };
 		EFE574F4E18FCAE635A1BD69576067C5 /* Pods-AesGcm_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AesGcm_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		F0368FCE1DFF29E2DA5DD8D031D5D755 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F406977BB011990E282A500D3AF2D644 /* AesGcm-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AesGcm-dummy.m"; sourceTree = "<group>"; };
 		F966F0D384E363EC6C45833A22CC4D8C /* Pods-AesGcm_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AesGcm_Tests-resources.sh"; sourceTree = "<group>"; };
-		FF0CFBF71D91C57700CB3790 /* IAGError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAGError.h; sourceTree = "<group>"; };
-		FF0CFBF81D91C57700CB3790 /* IAGError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAGError.m; sourceTree = "<group>"; };
-		FF33EF8A1D9817A200D47A89 /* IAGAesComponents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAGAesComponents.h; sourceTree = "<group>"; };
-		FF33EF8B1D9817A200D47A89 /* IAGAesComponents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAGAesComponents.m; sourceTree = "<group>"; };
-		FF33EF8C1D9817A200D47A89 /* IAGBitwiseComponents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAGBitwiseComponents.h; sourceTree = "<group>"; };
-		FF33EF8D1D9817A200D47A89 /* IAGBitwiseComponents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAGBitwiseComponents.m; sourceTree = "<group>"; };
-		FF33EF8E1D9817A200D47A89 /* IAGGcmEndianness.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAGGcmEndianness.h; sourceTree = "<group>"; };
-		FF33EF8F1D9817A200D47A89 /* IAGGcmEndianness.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAGGcmEndianness.m; sourceTree = "<group>"; };
-		FF33EF901D9817A200D47A89 /* IAGGcmMathComponents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAGGcmMathComponents.h; sourceTree = "<group>"; };
-		FF33EF911D9817A200D47A89 /* IAGGcmMathComponents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAGGcmMathComponents.m; sourceTree = "<group>"; };
-		FF33EF921D9817A200D47A89 /* IAGTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAGTypes.h; sourceTree = "<group>"; };
-		FFEFF8AE1D8D5DD900AF4B5A /* IAGAesGcm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAGAesGcm.h; sourceTree = "<group>"; };
-		FFEFF8AF1D8D5DD900AF4B5A /* IAGAesGcm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAGAesGcm.m; sourceTree = "<group>"; };
-		FFEFF8B21D8D643300AF4B5A /* IAGCipheredData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAGCipheredData.h; sourceTree = "<group>"; };
-		FFEFF8B31D8D643300AF4B5A /* IAGCipheredData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAGCipheredData.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5FFDCB68A337FF48CFFFC23ADCB0EC15 /* Frameworks */ = {
+		12BED36D1B83F51E80D6A8611FCA6B35 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				081A79F089CEF2BA86EC8D0E0BDF3D98 /* Foundation.framework in Frameworks */,
+				ACC20AE76418B9D7EAC3DFEC3DD700F3 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,6 +116,14 @@
 			path = "Target Support Files/Pods-AesGcm_Tests";
 			sourceTree = "<group>";
 		};
+		13BC62F50D9DA0D6A5D50EC64053A737 /* AesGcm */ = {
+			isa = PBXGroup;
+			children = (
+				B90D12AEAC31B0D96A75BBDC8C1244C9 /* Classes */,
+			);
+			path = AesGcm;
+			sourceTree = "<group>";
+		};
 		33B71E3D9F58954655363843333302DA /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -131,28 +139,6 @@
 				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		3F3F4E6DA95E8AE1383D0417DFD6727D /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				FF33EF891D98177B00D47A89 /* Components */,
-				FFEFF8AE1D8D5DD900AF4B5A /* IAGAesGcm.h */,
-				FFEFF8AF1D8D5DD900AF4B5A /* IAGAesGcm.m */,
-				FFEFF8B21D8D643300AF4B5A /* IAGCipheredData.h */,
-				FFEFF8B31D8D643300AF4B5A /* IAGCipheredData.m */,
-				FF0CFBF71D91C57700CB3790 /* IAGError.h */,
-				FF0CFBF81D91C57700CB3790 /* IAGError.m */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		4EC3C98441B257306F01A88FEAEBD964 /* AesGcm */ = {
-			isa = PBXGroup;
-			children = (
-				3F3F4E6DA95E8AE1383D0417DFD6727D /* Classes */,
-			);
-			path = AesGcm;
 			sourceTree = "<group>";
 		};
 		67DD332A52927D208FFE103F4918CE5F /* Targets Support Files */ = {
@@ -188,6 +174,36 @@
 			path = "Example/Pods/Target Support Files/AesGcm";
 			sourceTree = "<group>";
 		};
+		B3306B8A0E74D72C80E67C11690DCCBB /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				7B4D034A9201A5789DB96EB8CC10513E /* IAGAesComponents.h */,
+				6A4540C82336A3CEB3E72A84FC9DDB54 /* IAGAesComponents.m */,
+				337FD950BACA3D7C2FBED9CE32C6811B /* IAGBitwiseComponents.h */,
+				D19FE15EA5A11A8E1ADEBD862C2E7F1D /* IAGBitwiseComponents.m */,
+				D975D01BDA6C4E8B9D1E7B720D319CDA /* IAGGcmEndianness.h */,
+				412B95FD3EE08DF546DE1348D4A62103 /* IAGGcmEndianness.m */,
+				A9D75D3F4C08537D2E3D13FB5DA06EA9 /* IAGGcmMathComponents.h */,
+				8F10BDE6C451148CE5D15EDF8C2A1AC1 /* IAGGcmMathComponents.m */,
+				92835CAE8FF4E77D0660533C19786C6B /* IAGTypes.h */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		B90D12AEAC31B0D96A75BBDC8C1244C9 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B3306B8A0E74D72C80E67C11690DCCBB /* Components */,
+				E99656C86385E11EAE14DD53A22241E2 /* IAGAesGcm.h */,
+				C47861094D8CCA8B4D272FA0E1F6A10A /* IAGAesGcm.m */,
+				D7D29DB5E9236493DF1F688338B7B6B1 /* IAGCipheredData.h */,
+				C700E002540B2FA8DC84C2E08768FFF4 /* IAGCipheredData.m */,
+				831792F96B8E28F6D70FDA02CA12C81F /* IAGError.h */,
+				4041591EBBC650BB5D46DFBEBA49DB41 /* IAGError.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -207,27 +223,11 @@
 		EF346B53626DE737BE1512F796B0F535 /* AesGcm */ = {
 			isa = PBXGroup;
 			children = (
-				4EC3C98441B257306F01A88FEAEBD964 /* AesGcm */,
+				13BC62F50D9DA0D6A5D50EC64053A737 /* AesGcm */,
 				82BE2D0ABB5C1F7EF630DDD660AC6628 /* Support Files */,
 			);
 			name = AesGcm;
 			path = ../..;
-			sourceTree = "<group>";
-		};
-		FF33EF891D98177B00D47A89 /* Components */ = {
-			isa = PBXGroup;
-			children = (
-				FF33EF8A1D9817A200D47A89 /* IAGAesComponents.h */,
-				FF33EF8B1D9817A200D47A89 /* IAGAesComponents.m */,
-				FF33EF8C1D9817A200D47A89 /* IAGBitwiseComponents.h */,
-				FF33EF8D1D9817A200D47A89 /* IAGBitwiseComponents.m */,
-				FF33EF8E1D9817A200D47A89 /* IAGGcmEndianness.h */,
-				FF33EF8F1D9817A200D47A89 /* IAGGcmEndianness.m */,
-				FF33EF901D9817A200D47A89 /* IAGGcmMathComponents.h */,
-				FF33EF911D9817A200D47A89 /* IAGGcmMathComponents.m */,
-				FF33EF921D9817A200D47A89 /* IAGTypes.h */,
-			);
-			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,42 +241,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B4075879CFF0EF1196EB4AE3AF003154 /* Headers */ = {
+		C2DD94FD77FE78E1BEA6EF86FBDB9D87 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFEFF8B41D8D643300AF4B5A /* IAGCipheredData.h in Headers */,
-				FFEFF8B01D8D5DD900AF4B5A /* IAGAesGcm.h in Headers */,
-				FF33EF971D9817A200D47A89 /* IAGGcmEndianness.h in Headers */,
-				FF33EF951D9817A200D47A89 /* IAGBitwiseComponents.h in Headers */,
-				FF33EF991D9817A200D47A89 /* IAGGcmMathComponents.h in Headers */,
-				9E367B6C25C436D20235A5A006F2556D /* AesGcm-umbrella.h in Headers */,
-				FF33EF9B1D9817A200D47A89 /* IAGTypes.h in Headers */,
-				FF0CFBF91D91C57700CB3790 /* IAGError.h in Headers */,
-				FF33EF931D9817A200D47A89 /* IAGAesComponents.h in Headers */,
+				6EBF52B83512809CC64ABBF3683F5F0A /* AesGcm-umbrella.h in Headers */,
+				EF2F73D067AE416DF206EE006E13C0EB /* IAGAesComponents.h in Headers */,
+				836396A0B23A43F236117AB212462E33 /* IAGAesGcm.h in Headers */,
+				98B319AA211ECA5DB72EC6D3A4DB79E8 /* IAGBitwiseComponents.h in Headers */,
+				E93745C37C8748BE5667F835E6651612 /* IAGCipheredData.h in Headers */,
+				985018D7278BFD429D2565EAA81EBC81 /* IAGError.h in Headers */,
+				8C2E8AA725DC42F6446E79B126A50AD2 /* IAGGcmEndianness.h in Headers */,
+				A01BF9EA696D70EF4E419DF42A90FBB0 /* IAGGcmMathComponents.h in Headers */,
+				BFADBC0A56636980909E8A91031D3652 /* IAGTypes.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		154A67240ED2CD66D7C3A1043B3654AE /* AesGcm */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5CD2AF4E9EAEDE8618E20420EE55B4D1 /* Build configuration list for PBXNativeTarget "AesGcm" */;
-			buildPhases = (
-				DD42E4802201079A85E86B0833AADFC5 /* Sources */,
-				5FFDCB68A337FF48CFFFC23ADCB0EC15 /* Frameworks */,
-				B4075879CFF0EF1196EB4AE3AF003154 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = AesGcm;
-			productName = AesGcm;
-			productReference = BC49C1FCEE243F7F45EFABD4AFC7CFD0 /* AesGcm.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		89E78D42E211B132F075A0DB24F2F039 /* Pods-AesGcm_Tests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 300ED334999091C9634A05CD2F31A8D2 /* Build configuration list for PBXNativeTarget "Pods-AesGcm_Tests" */;
@@ -293,6 +276,23 @@
 			name = "Pods-AesGcm_Tests";
 			productName = "Pods-AesGcm_Tests";
 			productReference = 993EB8D69ED07220031F844A83AC21E8 /* Pods_AesGcm_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E3092E9D1C9F9B99D0DFB39C24F28AB4 /* AesGcm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4254580DAE182053A4912AA29DB5FD11 /* Build configuration list for PBXNativeTarget "AesGcm" */;
+			buildPhases = (
+				CE74E3782972DB1FB4071F59A8E6248F /* Sources */,
+				12BED36D1B83F51E80D6A8611FCA6B35 /* Frameworks */,
+				C2DD94FD77FE78E1BEA6EF86FBDB9D87 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AesGcm;
+			productName = AesGcm;
+			productReference = BC49C1FCEE243F7F45EFABD4AFC7CFD0 /* AesGcm.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -316,7 +316,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				154A67240ED2CD66D7C3A1043B3654AE /* AesGcm */,
+				E3092E9D1C9F9B99D0DFB39C24F28AB4 /* AesGcm */,
 				89E78D42E211B132F075A0DB24F2F039 /* Pods-AesGcm_Tests */,
 			);
 		};
@@ -331,18 +331,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DD42E4802201079A85E86B0833AADFC5 /* Sources */ = {
+		CE74E3782972DB1FB4071F59A8E6248F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF0CFBFA1D91C57700CB3790 /* IAGError.m in Sources */,
-				FF33EF9A1D9817A200D47A89 /* IAGGcmMathComponents.m in Sources */,
-				FFEFF8B51D8D643300AF4B5A /* IAGCipheredData.m in Sources */,
-				FFEFF8B11D8D5DD900AF4B5A /* IAGAesGcm.m in Sources */,
-				FF33EF961D9817A200D47A89 /* IAGBitwiseComponents.m in Sources */,
-				8B5F2382AD34C4A54D851685645AC396 /* AesGcm-dummy.m in Sources */,
-				FF33EF981D9817A200D47A89 /* IAGGcmEndianness.m in Sources */,
-				FF33EF941D9817A200D47A89 /* IAGAesComponents.m in Sources */,
+				4B24FAD880299CBB31898EB3305886F8 /* AesGcm-dummy.m in Sources */,
+				7224CFF4B0C1654CE7CD4251558D9245 /* IAGAesComponents.m in Sources */,
+				EB83743B439D59D97E2F2308791FF5AF /* IAGAesGcm.m in Sources */,
+				BEAB3F67264E927F420F5B94DD778C95 /* IAGBitwiseComponents.m in Sources */,
+				3B555B98896D81CFB203B0836CBFBCBB /* IAGCipheredData.m in Sources */,
+				6CD809EA723D3C854BDA4CB5ADCFEEF0 /* IAGError.m in Sources */,
+				E2AD27D0C81F5863E5319F0534442E19 /* IAGGcmEndianness.m in Sources */,
+				A5CE5CE6ED21F5B166B904EE6FCF2B03 /* IAGGcmMathComponents.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,13 +352,13 @@
 		9B556770031662D0CCC8ACE17204DF3E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = AesGcm;
-			target = 154A67240ED2CD66D7C3A1043B3654AE /* AesGcm */;
+			target = E3092E9D1C9F9B99D0DFB39C24F28AB4 /* AesGcm */;
 			targetProxy = EA2E8B57BD1A2BAF3C9B7D35B00D4493 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		05F8BF4BEA342D65002CC18EC0FD2CA7 /* Release */ = {
+		145C7F838853DF4FBB024CB8D24EAB1A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 13BC53200F11672E18D10717FC830E24 /* AesGcm.xcconfig */;
 			buildSettings = {
@@ -366,7 +366,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -379,7 +379,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/AesGcm/AesGcm.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = AesGcm;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -387,7 +387,7 @@
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		407E0501DF9E74B8F63E5DB21B82D9C6 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -508,7 +508,7 @@
 			};
 			name = Debug;
 		};
-		F3BBB0613FEBBA27C884E8F8496559A2 /* Debug */ = {
+		E8471274DDE83E6CB1E666EEC55F3D43 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 13BC53200F11672E18D10717FC830E24 /* AesGcm.xcconfig */;
 			buildSettings = {
@@ -516,7 +516,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -529,7 +529,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/AesGcm/AesGcm.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = AesGcm;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -537,7 +537,7 @@
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		F5D447C533E04E0A82B30969198527B9 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -595,11 +595,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5CD2AF4E9EAEDE8618E20420EE55B4D1 /* Build configuration list for PBXNativeTarget "AesGcm" */ = {
+		4254580DAE182053A4912AA29DB5FD11 /* Build configuration list for PBXNativeTarget "AesGcm" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F3BBB0613FEBBA27C884E8F8496559A2 /* Debug */,
-				05F8BF4BEA342D65002CC18EC0FD2CA7 /* Release */,
+				145C7F838853DF4FBB024CB8D24EAB1A /* Debug */,
+				E8471274DDE83E6CB1E666EEC55F3D43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

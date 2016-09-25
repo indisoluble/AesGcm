@@ -245,7 +245,7 @@ static const IAGSizeType kInitializationVectorRecommendedSize = 12;
 
     memcpy(buffer, iv.bytes, iv.length);
 
-    IAGUInt64Type len = [IAGGcmEndianness swapUInt64HostToGcm:iv.length];
+    IAGUInt64Type len = [IAGGcmEndianness swapUInt64HostToGcm:(IAGBitsInUChar * iv.length)];
     memcpy(buffer + bufferSize - sizeof(IAGUInt64Type), &len, sizeof(IAGUInt64Type));
 
     [IAGGcmMathComponents getGhashBlock:precounterBlock
@@ -296,7 +296,7 @@ static const IAGSizeType kInitializationVectorRecommendedSize = 12;
     IAGSizeType bufferSize = (aadBufferSize + v +
                               gCounterBufferSize + u +
                               2 * sizeof(IAGUInt64Type));
-    IAGUCharType *buffer[bufferSize];
+    IAGUCharType buffer[bufferSize];
 
     memset(buffer, 0x00, bufferSize);
 
@@ -307,11 +307,11 @@ static const IAGSizeType kInitializationVectorRecommendedSize = 12;
     memcpy(buffer + pos, gcounterBuffer, gCounterBufferSize);
 
     pos += (gCounterBufferSize + u);
-    IAGUInt64Type len = [IAGGcmEndianness swapUInt64HostToGcm:aadBufferSize];
+    IAGUInt64Type len = [IAGGcmEndianness swapUInt64HostToGcm:(IAGBitsInUChar * aadBufferSize)];
     memcpy(buffer + pos, &len, sizeof(IAGUInt64Type));
 
     pos += sizeof(IAGUInt64Type);
-    len = [IAGGcmEndianness swapUInt64HostToGcm:gCounterBufferSize];
+    len = [IAGGcmEndianness swapUInt64HostToGcm:(IAGBitsInUChar * gCounterBufferSize)];
     memcpy(buffer + pos, &len, sizeof(IAGUInt64Type));
 
     [IAGGcmMathComponents getGhashBlock:ghashBlock

@@ -27,7 +27,7 @@
     // Steps:
     // 1. Let X1, X 2, ... , X m-1, X m denote the unique sequence of blocks such that
     //    X = X 1 || X 2 || ... || X m-1 || X m.
-    // 2. Let Y0 be the “zero block,” 0128.
+    // 2. Let Y0 be the “zero block,” 0^128.
     IAGBlockType y;
     memset(y, 0x00, sizeof(IAGBlockType));
 
@@ -168,7 +168,7 @@
     // Let R be the bit string 11100001 || 0^120
     IAGBlockType r;
     memset(r, 0x00, sizeof(IAGBlockType));
-    r[0] = 0xE1;
+    r[0] = 0xE1U;
 
     // Steps:
     // 1. Let x0 x1 ... x127 denote the sequence of bits in X
@@ -197,7 +197,7 @@
 
         [IAGBitwiseComponents getSingleRightShiftedBlock:v withBlock:vi];
 
-        if ([IAGBitwiseComponents isLeastSignificantBitActivatedAtPosition:i inBlock:vi])
+        if ([IAGBitwiseComponents isLeastSignificantBitActivatedAtPosition:0 inBlock:vi])
         {
             memcpy(vi, v, sizeof(IAGBlockType));
 

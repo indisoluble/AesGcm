@@ -39,6 +39,14 @@
     return self.authenticationTagData.length;
 }
 
+#pragma mark - NSObject methods
+
+- (NSString *)description
+{
+    return [NSString stringWithFormat:@"Ciphertext: %@. Auth tag: %@",
+            self.cipheredData, self.authenticationTagData];
+}
+
 #pragma mark - Init object
 
 - (instancetype)initWithCipheredBuffer:(const void *)cipheredBuffer
@@ -56,6 +64,34 @@
     }
 
     return self;
+}
+
+#pragma mark - Equality
+
+- (NSUInteger)hash
+{
+    return self.cipheredData.hash;
+}
+
+- (BOOL)isEqual:(id)object
+{
+    if ([self class] == [object class])
+    {
+        return [self isEqualToCipheredData:object];
+    }
+
+    return [super isEqual:object];
+}
+
+- (BOOL)isEqualToCipheredData:(IAGCipheredData *)object
+{
+    if (self == object)
+    {
+        return YES;
+    }
+
+    return ([self.cipheredData isEqualToData:object.cipheredData] &&
+            [self.authenticationTagData isEqualToData:object.authenticationTagData]);
 }
 
 @end

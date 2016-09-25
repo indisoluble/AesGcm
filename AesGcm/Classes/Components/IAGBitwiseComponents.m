@@ -8,9 +8,8 @@
 
 #import "IAGBitwiseComponents.h"
 
-static const IAGUInt8Type kBitsInUChar = 8;
-
-const IAGUInt8Type IAGMaxBitPositionInABlock = (kBitsInUChar * sizeof(IAGBlockType) - 1);
+const IAGUInt8Type IAGBitsInUChar = 8;
+const IAGUInt8Type IAGMaxBitPositionInABlock = (IAGBitsInUChar * sizeof(IAGBlockType) - 1);
 
 @implementation IAGBitwiseComponents
 
@@ -37,8 +36,15 @@ const IAGUInt8Type IAGMaxBitPositionInABlock = (kBitsInUChar * sizeof(IAGBlockTy
 
 + (void)getSingleRightShiftedBlock:(IAGBlockType)shiftedBlock withBlock:(IAGBlockType)block
 {
-    memset(shiftedBlock, 0x00, sizeof(IAGUCharType));
-    memcpy(shiftedBlock + sizeof(IAGUCharType), block, sizeof(IAGBlockType) - sizeof(IAGUCharType));
+    for (IAGSizeType i = 0; i < sizeof(IAGBlockType); i++)
+    {
+        shiftedBlock[i] = block[i] >> 1;
+
+        if ((i > 0) && (block[i - 1] & 0x01))
+        {
+            shiftedBlock[i] = (shiftedBlock[i] | 0x80);
+        }
+    }
 }
 
 + (void)getMostSignificantBytes:(IAGUCharType *)msb
@@ -66,8 +72,8 @@ const IAGUInt8Type IAGMaxBitPositionInABlock = (kBitsInUChar * sizeof(IAGBlockTy
 {
     NSParameterAssert(position <= IAGMaxBitPositionInABlock);
 
-    IAGUCharType mostSignificantByte = block[position / kBitsInUChar];
-    IAGUCharType mask = 0x80 >> (position % kBitsInUChar);
+    IAGUCharType mostSignificantByte = block[position / IAGBitsInUChar];
+    IAGUCharType mask = 0x80 >> (position % IAGBitsInUChar);
     IAGUCharType mostSignificantBit = (mostSignificantByte & mask);
 
     return (mostSignificantBit != 0);
@@ -78,8 +84,8 @@ const IAGUInt8Type IAGMaxBitPositionInABlock = (kBitsInUChar * sizeof(IAGBlockTy
 {
     NSParameterAssert(position <= IAGMaxBitPositionInABlock);
 
-    IAGUCharType leastSignificantByte = block[IAGMaxBitPositionInABlock - (position / kBitsInUChar)];
-    IAGUCharType mask = 0x01 << (position % kBitsInUChar);
+    IAGUCharType leastSignificantByte = block[(IAGMaxBitPositionInABlock - position) / IAGBitsInUChar];
+    IAGUCharType mask = 0x01 << (position % IAGBitsInUChar);
     IAGUCharType leastSignificantBit = (leastSignificantByte & mask);
 
     return (leastSignificantBit != 0);

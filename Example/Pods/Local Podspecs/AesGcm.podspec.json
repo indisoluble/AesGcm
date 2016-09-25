@@ -1,9 +1,9 @@
 {
   "name": "AesGcm",
   "version": "0.1.0",
-  "summary": "A short description of AesGcm.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/AesGcm",
+  "summary": "Galois/Counter Mode (GCM) with Advanced Encryption System (AES).",
+  "description": "ObjC implementation of Galois/Counter Mode (GCM) with Advanced Encryption System (AES).",
+  "homepage": "https://github.com/indisoluble/AesGcm",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,7 +12,7 @@
     "Enrique de la Torre": "indisoluble_dev@me.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/AesGcm.git",
+    "git": "https://github.com/indisoluble/AesGcm.git",
     "tag": "0.1.0"
   },
   "platforms": {

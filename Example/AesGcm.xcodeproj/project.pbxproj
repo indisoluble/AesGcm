@@ -11,8 +11,10 @@
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
-		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		AC8226166864DBC96FC6200B /* Pods_AesGcm_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66485F1FBF6EDD82FC7A5E18 /* Pods_AesGcm_Tests.framework */; };
+		FF33EF9D1D981E6600D47A89 /* IAGAesGcmTest.m in Sources */ = {isa = PBXBuildFile; fileRef = FF33EF9C1D981E6600D47A89 /* IAGAesGcmTest.m */; };
+		FF33EFE91D9847E000D47A89 /* IAGGcmMathComponentsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = FF33EFE81D9847E000D47A89 /* IAGGcmMathComponentsTest.m */; };
+		FF33EFEE1D98495000D47A89 /* NSData+IAGHexString.m in Sources */ = {isa = PBXBuildFile; fileRef = FF33EFED1D98495000D47A89 /* NSData+IAGHexString.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,12 +27,15 @@
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		66485F1FBF6EDD82FC7A5E18 /* Pods_AesGcm_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AesGcm_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8456EAD94FB1E142FBB13FCB /* Pods-AesGcm_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AesGcm_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AesGcm_Tests/Pods-AesGcm_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		C7EA266BF31826ABA0DB41B7 /* AesGcm.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = AesGcm.podspec; path = ../AesGcm.podspec; sourceTree = "<group>"; };
 		EC0FC8446547AAADFAFF171E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		FF33EF9C1D981E6600D47A89 /* IAGAesGcmTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAGAesGcmTest.m; sourceTree = "<group>"; };
+		FF33EFE81D9847E000D47A89 /* IAGGcmMathComponentsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAGGcmMathComponentsTest.m; sourceTree = "<group>"; };
+		FF33EFEC1D98495000D47A89 /* NSData+IAGHexString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+IAGHexString.h"; sourceTree = "<group>"; };
+		FF33EFED1D98495000D47A89 /* NSData+IAGHexString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+IAGHexString.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +87,9 @@
 		6003F5B5195388D20070C39A /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				6003F5BB195388D20070C39A /* Tests.m */,
+				FF33EFEB1D98490300D47A89 /* Categories */,
+				FF33EFE71D9847BE00D47A89 /* Components */,
+				FF33EF9C1D981E6600D47A89 /* IAGAesGcmTest.m */,
 				6003F5B6195388D20070C39A /* Supporting Files */,
 			);
 			path = Tests;
@@ -115,6 +122,23 @@
 				104DFA1CF39C552FEB6BA34A /* Pods-AesGcm_Tests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		FF33EFE71D9847BE00D47A89 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				FF33EFE81D9847E000D47A89 /* IAGGcmMathComponentsTest.m */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		FF33EFEB1D98490300D47A89 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				FF33EFEC1D98495000D47A89 /* NSData+IAGHexString.h */,
+				FF33EFED1D98495000D47A89 /* NSData+IAGHexString.m */,
+			);
+			path = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,7 +256,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6003F5BC195388D20070C39A /* Tests.m in Sources */,
+				FF33EF9D1D981E6600D47A89 /* IAGAesGcmTest.m in Sources */,
+				FF33EFE91D9847E000D47A89 /* IAGGcmMathComponentsTest.m in Sources */,
+				FF33EFEE1D98495000D47A89 /* NSData+IAGHexString.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
