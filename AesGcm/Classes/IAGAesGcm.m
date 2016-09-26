@@ -64,7 +64,7 @@ static const IAGSizeType kInitializationVectorRecommendedSize = 12;
     // 3. Let C = GCTR(inc32(J0), P).
     IAGUCharType c[plainData.length];
     success = [IAGAesGcm getGCounterBuffer:c
-                                withBuffer:plainData.bytes
+                                withBuffer:(IAGUCharType *)plainData.bytes
                                 bufferSize:plainData.length
                            precounterBlock:j
                                        key:key
@@ -79,7 +79,7 @@ static const IAGSizeType kInitializationVectorRecommendedSize = 12;
     //      S = GHASH(A || 0^v || C || 0^u || [len(A)]64 || [len(C)]64).
     IAGBlockType s;
     [IAGAesGcm getGhashBlock:s
-               withAadBuffer:aad.bytes
+               withAadBuffer:(IAGUCharType *)aad.bytes
                aadBufferSize:aad.length
               gCounterBuffer:c
           gCounterBufferSize:plainData.length
@@ -150,7 +150,7 @@ static const IAGSizeType kInitializationVectorRecommendedSize = 12;
     // 4. Let P = GCTR(inc32(J0),C).
     IAGUCharType p[cipheredData.cipheredBufferLength];
     success = [IAGAesGcm getGCounterBuffer:p
-                                withBuffer:cipheredData.cipheredBuffer
+                                withBuffer:(IAGUCharType *)cipheredData.cipheredBuffer
                                 bufferSize:cipheredData.cipheredBufferLength
                            precounterBlock:j
                                        key:key
@@ -165,9 +165,9 @@ static const IAGSizeType kInitializationVectorRecommendedSize = 12;
     //      S = GHASH(A || 0^v || C || 0^u || [len(A)]64 || [len(C)]64).
     IAGBlockType s;
     [IAGAesGcm getGhashBlock:s
-               withAadBuffer:aad.bytes
+               withAadBuffer:(IAGUCharType *)aad.bytes
                aadBufferSize:aad.length
-              gCounterBuffer:cipheredData.cipheredBuffer
+              gCounterBuffer:(IAGUCharType *)cipheredData.cipheredBuffer
           gCounterBufferSize:cipheredData.cipheredBufferLength
                   hashSubkey:h];
 

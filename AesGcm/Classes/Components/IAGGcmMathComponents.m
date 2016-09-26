@@ -140,7 +140,7 @@
     // remain unchanged.
 
     IAGUInt32Type lsb;
-    [IAGBitwiseComponents getLeastSignificantBytes:&lsb
+    [IAGBitwiseComponents getLeastSignificantBytes:(IAGUCharType *)&lsb
                                           withSize:sizeof(IAGUInt32Type)
                                           inBuffer:buffer
                                           withSize:size];
