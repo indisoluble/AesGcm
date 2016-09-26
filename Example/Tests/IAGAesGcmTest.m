@@ -9,6 +9,7 @@
 #import <XCTest/XCTest.h>
 
 #import "IAGAesGcm.h"
+#import "IAGError.h"
 
 #import "NSData+IAGHexString.h"
 
@@ -1223,6 +1224,42 @@
                                                                "b16aedf5aa0de657ba637b39")];
 
     XCTAssertEqualObjects(plainData, expectedPlainData);
+}
+
+- (void)test256BitKeyNonEmptyCiphertextNonEmptyAad480BitIvAndWrongAuthTag_authenticatedDecryptingCipherData_returnsError
+{
+    // given
+    NSData *key = [NSData iag_dataWithHexString:(@"feffe9928665731c6d6a8f9467308308" \
+                                                 "feffe9928665731c6d6a8f9467308308")];
+    NSData *aad = [NSData iag_dataWithHexString:(@"feedfacedeadbeeffeedfacedeadbeef" \
+                                                 "abaddad2")];
+    NSData *iv = [NSData iag_dataWithHexString:(@"9313225df88406e555909c5aff5269aa" \
+                                                "6a7a9538534f7da1e4c303d2a318a728" \
+                                                "c3c0c95156809539fcf0e2429a6b5254" \
+                                                "16aedbf5a0de6a57a637b39b")];
+
+    NSData *ciphertext = [NSData iag_dataWithHexString:(@"5a8def2f0c9e53f1f75d7853659e2a20" \
+                                                        "eeb2b22aafde6419a058ab4f6f746bf4" \
+                                                        "0fc0c3b780f244452da3ebf1c5d82cde" \
+                                                        "a2418997200ef82e44ae7e3f")];
+    NSData *authTag = [NSData iag_dataWithHexString:@"a44a8266ee1c8eb0c8b5d4cf5ae9f19b"];
+    IAGCipheredData *cipheredData = [[IAGCipheredData alloc] initWithCipheredBuffer:ciphertext.bytes
+                                                               cipheredBufferLength:ciphertext.length
+                                                                  authenticationTag:authTag.bytes
+                                                            authenticationTagLength:authTag.length];
+
+    // when
+    NSError *error = nil;
+    NSData *plainData = [IAGAesGcm plainDataByAuthenticatedDecryptingCipheredData:cipheredData
+                                                  withAdditionalAuthenticatedData:aad
+                                                             initializationVector:iv
+                                                                              key:key
+                                                                            error:&error];
+
+    // then
+    XCTAssertNil(plainData);
+    XCTAssertEqualObjects(error.domain, IAGErrorDomain);
+    XCTAssertEqual(error.code, IAGErrorCodeAuthenticationTagsNotIdentical);
 }
 
 @end
