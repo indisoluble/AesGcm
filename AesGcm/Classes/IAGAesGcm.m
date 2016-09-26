@@ -167,7 +167,7 @@ static const IAGSizeType kInitializationVectorRecommendedSize = 12;
     [IAGAesGcm getGhashBlock:s
                withAadBuffer:aad.bytes
                aadBufferSize:aad.length
-              gCounterBuffer:p
+              gCounterBuffer:cipheredData.cipheredBuffer
           gCounterBufferSize:cipheredData.cipheredBufferLength
                   hashSubkey:h];
 
