@@ -32,8 +32,6 @@ pod "AesGcm"
 ## Usage
 
 ```objc
-#import <CommonCrypto/CommonCryptor.h>
-
 #import "IAGAesGcm.h"
 
 u_char keyBytes[16] = {...};
