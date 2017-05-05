@@ -28,10 +28,10 @@ NS_ASSUME_NONNULL_BEGIN
  @param bufferSize Length of the buffer, it has to be a multiple of sizeof(IAGBlockType)
  @param hashSubkey The hash subkey
  */
-+ (void)getGhashBlock:(IAGBlockType)ghashBlock
++ (void)getGhashBlock:(IAGBlockType _Nonnull )ghashBlock
            withBuffer:(IAGUCharType *)buffer
            bufferSize:(IAGSizeType)bufferSize
-           hashSubkey:(IAGBlockType)hashSubkey;
+           hashSubkey:(IAGBlockType _Nonnull )hashSubkey;
 
 /**
  This method generates the counter buffers used during the encryption/decryption process.
@@ -52,7 +52,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (BOOL)getGCounterBuffer:(IAGUCharType *)gcounterBuffer
                withBuffer:(IAGUCharType *)buffer
                bufferSize:(IAGSizeType)bufferSize
-      initialCounterBlock:(IAGBlockType)icb
+      initialCounterBlock:(IAGBlockType _Nonnull )icb
                       key:(NSData *)key
                     error:(NSError **)error;
 
