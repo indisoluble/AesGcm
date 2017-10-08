@@ -30,8 +30,8 @@ NS_ASSUME_NONNULL_BEGIN
  
  @see IAGErrorFactory
  */
-+ (BOOL)getCipheredBlock:(IAGBlockType _Nonnull )cipheredBlock
-       byUsingAESOnBlock:(IAGBlockType _Nonnull )block
++ (BOOL)getCipheredBlock:(nonnull IAGBlockType)cipheredBlock
+       byUsingAESOnBlock:(nonnull IAGBlockType)block
                  withKey:(NSData *)key
                    error:(NSError **)error;
 
