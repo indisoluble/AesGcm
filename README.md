@@ -1,7 +1,7 @@
 # AesGcm
 
-[![CI Status](http://img.shields.io/travis/indisoluble/AesGcm.svg?style=flat)](https://travis-ci.org/indisoluble/AesGcm)
-[![codecov.io](https://codecov.io/github/indisoluble/AesGcm/coverage.svg?branch=master)](https://codecov.io/github/indisoluble/AesGcm?branch=master)
+[![CI Status](https://travis-ci.org/indisoluble/AesGcm.svg)](https://travis-ci.org/indisoluble/AesGcm)
+[![codecov.io](https://codecov.io/github/indisoluble/AesGcm/coverage.svg)](https://codecov.io/github/indisoluble/AesGcm)
 [![Version](https://img.shields.io/cocoapods/v/AesGcm.svg?style=flat)](http://cocoapods.org/pods/AesGcm)
 [![Docs](https://img.shields.io/cocoapods/metrics/doc-percent/AesGcm.svg)](http://cocoadocs.org/docsets/AesGcm)
 
