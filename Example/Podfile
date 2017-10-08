@@ -1,6 +1,8 @@
+platform :ios, '8.0'
+
 use_frameworks!
+
 target 'AesGcm_Tests' do
-  pod 'AesGcm', :path => '../'
-  
-  
+  pod 'AesGcm', :path => '../'  
 end
+
