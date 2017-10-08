@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'AesGcm'
-  s.version          = '0.1.7'
+  s.version          = '1.0.0'
   s.summary          = 'Galois/Counter Mode (GCM) with Advanced Encryption System (AES).'
 
   s.description      = <<-DESC
@@ -13,7 +13,8 @@ ObjC implementation of Galois/Counter Mode (GCM) with Advanced Encryption System
   s.source           = { :git => 'https://github.com/indisoluble/AesGcm.git', :tag => s.version.to_s }
 
   s.platform = :ios
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '8.3'
 
   s.source_files = 'AesGcm/Classes/**/*'
+  s.public_header_files = 'AesGcm/Classes/*.h'
 end

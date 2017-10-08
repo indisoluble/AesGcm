@@ -13,7 +13,6 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		AC8226166864DBC96FC6200B /* Pods_AesGcm_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66485F1FBF6EDD82FC7A5E18 /* Pods_AesGcm_Tests.framework */; };
 		FF33EF9D1D981E6600D47A89 /* IAGAesGcmTest.m in Sources */ = {isa = PBXBuildFile; fileRef = FF33EF9C1D981E6600D47A89 /* IAGAesGcmTest.m */; };
-		FF33EFE91D9847E000D47A89 /* IAGGcmMathComponentsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = FF33EFE81D9847E000D47A89 /* IAGGcmMathComponentsTest.m */; };
 		FF33EFEE1D98495000D47A89 /* NSData+IAGHexString.m in Sources */ = {isa = PBXBuildFile; fileRef = FF33EFED1D98495000D47A89 /* NSData+IAGHexString.m */; };
 /* End PBXBuildFile section */
 
@@ -33,7 +32,6 @@
 		C7EA266BF31826ABA0DB41B7 /* AesGcm.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = AesGcm.podspec; path = ../AesGcm.podspec; sourceTree = "<group>"; };
 		EC0FC8446547AAADFAFF171E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		FF33EF9C1D981E6600D47A89 /* IAGAesGcmTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAGAesGcmTest.m; sourceTree = "<group>"; };
-		FF33EFE81D9847E000D47A89 /* IAGGcmMathComponentsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAGGcmMathComponentsTest.m; sourceTree = "<group>"; };
 		FF33EFEC1D98495000D47A89 /* NSData+IAGHexString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+IAGHexString.h"; sourceTree = "<group>"; };
 		FF33EFED1D98495000D47A89 /* NSData+IAGHexString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+IAGHexString.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,7 +86,6 @@
 			isa = PBXGroup;
 			children = (
 				FF33EFEB1D98490300D47A89 /* Categories */,
-				FF33EFE71D9847BE00D47A89 /* Components */,
 				FF33EF9C1D981E6600D47A89 /* IAGAesGcmTest.m */,
 				6003F5B6195388D20070C39A /* Supporting Files */,
 			);
@@ -122,14 +119,6 @@
 				104DFA1CF39C552FEB6BA34A /* Pods-AesGcm_Tests.release.xcconfig */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		FF33EFE71D9847BE00D47A89 /* Components */ = {
-			isa = PBXGroup;
-			children = (
-				FF33EFE81D9847E000D47A89 /* IAGGcmMathComponentsTest.m */,
-			);
-			path = Components;
 			sourceTree = "<group>";
 		};
 		FF33EFEB1D98490300D47A89 /* Categories */ = {
@@ -263,7 +252,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF33EF9D1D981E6600D47A89 /* IAGAesGcmTest.m in Sources */,
-				FF33EFE91D9847E000D47A89 /* IAGGcmMathComponentsTest.m in Sources */,
 				FF33EFEE1D98495000D47A89 /* NSData+IAGHexString.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
