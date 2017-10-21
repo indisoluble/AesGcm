@@ -14,6 +14,7 @@
 		AC8226166864DBC96FC6200B /* Pods_AesGcm_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66485F1FBF6EDD82FC7A5E18 /* Pods_AesGcm_Tests.framework */; };
 		FF33EF9D1D981E6600D47A89 /* IAGAesGcmTest.m in Sources */ = {isa = PBXBuildFile; fileRef = FF33EF9C1D981E6600D47A89 /* IAGAesGcmTest.m */; };
 		FF33EFEE1D98495000D47A89 /* NSData+IAGHexString.m in Sources */ = {isa = PBXBuildFile; fileRef = FF33EFED1D98495000D47A89 /* NSData+IAGHexString.m */; };
+		FF34435B1F9B9EFD00359A7D /* IAGCipheredDataTest.m in Sources */ = {isa = PBXBuildFile; fileRef = FF34435A1F9B9EFD00359A7D /* IAGCipheredDataTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		FF33EF9C1D981E6600D47A89 /* IAGAesGcmTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAGAesGcmTest.m; sourceTree = "<group>"; };
 		FF33EFEC1D98495000D47A89 /* NSData+IAGHexString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+IAGHexString.h"; sourceTree = "<group>"; };
 		FF33EFED1D98495000D47A89 /* NSData+IAGHexString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+IAGHexString.m"; sourceTree = "<group>"; };
+		FF34435A1F9B9EFD00359A7D /* IAGCipheredDataTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IAGCipheredDataTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 			children = (
 				FF33EFEB1D98490300D47A89 /* Categories */,
 				FF33EF9C1D981E6600D47A89 /* IAGAesGcmTest.m */,
+				FF34435A1F9B9EFD00359A7D /* IAGCipheredDataTest.m */,
 				6003F5B6195388D20070C39A /* Supporting Files */,
 			);
 			path = Tests;
@@ -253,6 +256,7 @@
 			files = (
 				FF33EF9D1D981E6600D47A89 /* IAGAesGcmTest.m in Sources */,
 				FF33EFEE1D98495000D47A89 /* NSData+IAGHexString.m in Sources */,
+				FF34435B1F9B9EFD00359A7D /* IAGCipheredDataTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

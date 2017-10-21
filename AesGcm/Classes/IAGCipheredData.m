@@ -49,6 +49,23 @@
 
 #pragma mark - Init object
 
+- (instancetype)initWithCipheredData:(NSData *)cipheredData
+                   authenticationTag:(NSData *)authenticationTag {
+    BOOL isAuthenticationTagLengthValid = ((IAGAuthenticationTagLength96 == authenticationTag.length) ||
+                                           (IAGAuthenticationTagLength104 == authenticationTag.length) ||
+                                           (IAGAuthenticationTagLength112 == authenticationTag.length) ||
+                                           (IAGAuthenticationTagLength120 == authenticationTag.length) ||
+                                           (IAGAuthenticationTagLength128 == authenticationTag.length));
+    if (!isAuthenticationTagLengthValid) {
+        return nil;
+    }
+
+    return [self initWithCipheredBuffer:cipheredData.bytes
+                   cipheredBufferLength:cipheredData.length
+                      authenticationTag:authenticationTag.bytes
+                authenticationTagLength:(IAGAuthenticationTagLength)authenticationTag.length];
+}
+
 - (instancetype)initWithCipheredBuffer:(const void *)cipheredBuffer
                   cipheredBufferLength:(NSUInteger)cipheredBufferLength
                      authenticationTag:(const void *)authenticationTag

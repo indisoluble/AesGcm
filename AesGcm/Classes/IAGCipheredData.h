@@ -52,14 +52,28 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic, readonly) IAGAuthenticationTagLength authenticationTagLength;
 
-/** Unavailable. Use the designated initializer */
+/** Unavailable. Use designated initializer */
 - (instancetype)init NS_UNAVAILABLE;
+
+/**
+ Convenience initializer
+
+ @param cipheredData Buffer with the ciphered data
+ @param authenticationTag Buffer with the autentication tag generated when the data was ciphered. Its size has to be one of the values specified in IAGAuthenticationTagLength
+
+ @return An instance of this class or nil if the size of authenticationTag is not of IAGAuthenticationTagLength
+
+ @see IAGAuthenticationTagLength
+ @see [IAGAesGcm plainDataByAuthenticatedDecryptingCipheredData:withAdditionalAuthenticatedData:initializationVector:key:error:]
+ */
+- (nullable instancetype)initWithCipheredData:(NSData *)cipheredData
+                            authenticationTag:(NSData *)authenticationTag;
 
 /** Designated initializer */
 - (instancetype)initWithCipheredBuffer:(const void *)cipheredBuffer
                   cipheredBufferLength:(NSUInteger)cipheredBufferLength
                      authenticationTag:(const void *)authenticationTag
-               authenticationTagLength:(IAGAuthenticationTagLength)authenticationTagLength;
+               authenticationTagLength:(IAGAuthenticationTagLength)authenticationTagLength NS_DESIGNATED_INITIALIZER;
 
 /** Class-specific equality method */
 - (BOOL)isEqualToCipheredData:(IAGCipheredData *)object;

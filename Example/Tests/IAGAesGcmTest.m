@@ -6,10 +6,8 @@
 //  Copyright © 2016 Enrique de la Torre. All rights reserved.
 //
 
+#import <AesGcm/AesGcm-umbrella.h>
 #import <XCTest/XCTest.h>
-
-#import "IAGAesGcm.h"
-#import "IAGError.h"
 
 #import "NSData+IAGHexString.h"
 
