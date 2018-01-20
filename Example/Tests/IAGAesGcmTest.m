@@ -614,29 +614,6 @@
     XCTAssertEqualObjects(cipheredData, expectedCipheredData);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 - (void)test128BitZeroKeyEmptyCiphertextEmptyAad96BitZeroIvAnd128BitAuthTag_authenticatedDecryptingCipheredData_returnsExpectedPlainData
 {
     // given

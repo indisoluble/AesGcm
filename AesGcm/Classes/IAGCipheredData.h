@@ -30,7 +30,7 @@ typedef NS_ENUM(NSUInteger, IAGAuthenticationTagLength) {
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface IAGCipheredData : NSObject
+@interface IAGCipheredData : NSObject <NSSecureCoding>
 
 /** Ciphered data generated after encrypting some plain data. */
 @property (nonatomic, readonly) const void *cipheredBuffer NS_RETURNS_INNER_POINTER;

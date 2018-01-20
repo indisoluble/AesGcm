@@ -8,6 +8,9 @@
 
 #import "IAGCipheredData.h"
 
+static NSString *const kCoderKeyAuthenticationTagData = @"authenticationTagData";
+static NSString *const kCoderKeyCipheredData = @"cipheredData";
+
 @interface IAGCipheredData ()
 
 @property (nonatomic) NSData *cipheredData;
@@ -39,6 +42,13 @@
     return self.authenticationTagData.length;
 }
 
+#pragma mark - NSSecureCoding class synthesize properties
+
++ (BOOL)supportsSecureCoding
+{
+    return YES;
+}
+
 #pragma mark - NSObject methods
 
 - (NSString *)description
@@ -56,7 +66,8 @@
                                            (IAGAuthenticationTagLength112 == authenticationTag.length) ||
                                            (IAGAuthenticationTagLength120 == authenticationTag.length) ||
                                            (IAGAuthenticationTagLength128 == authenticationTag.length));
-    if (!isAuthenticationTagLengthValid) {
+    if (!isAuthenticationTagLengthValid)
+    {
         return nil;
     }
 
@@ -81,6 +92,21 @@
     }
 
     return self;
+}
+
+#pragma mark - NSCoding init methods
+
+- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+    NSData *cipheredData = [aDecoder decodeObjectOfClass:[NSData class]
+                                                  forKey:kCoderKeyCipheredData];
+    NSData *authenticationTag = [aDecoder decodeObjectOfClass:[NSData class]
+                                                       forKey:kCoderKeyAuthenticationTagData];
+    if (!cipheredData || !authenticationTag)
+    {
+        return nil;
+    }
+
+    return [self initWithCipheredData:cipheredData authenticationTag:authenticationTag];
 }
 
 #pragma mark - Equality
@@ -109,6 +135,13 @@
 
     return ([self.cipheredData isEqualToData:object.cipheredData] &&
             [self.authenticationTagData isEqualToData:object.authenticationTagData]);
+}
+
+#pragma mark - NSCoding methods
+
+- (void)encodeWithCoder:(NSCoder *)aCoder {
+    [aCoder encodeObject:self.cipheredData forKey:kCoderKeyCipheredData];
+    [aCoder encodeObject:self.authenticationTagData forKey:kCoderKeyAuthenticationTagData];
 }
 
 @end
