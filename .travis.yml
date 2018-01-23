@@ -14,4 +14,4 @@ script:
 - xcodebuild test -workspace Example/AesGcm.xcworkspace -scheme AesGcm-Example -sdk iphonesimulator11.2 -destination 'platform=iOS Simulator,name=iPhone 4s,OS=8.3' ONLY_ACTIVE_ARCH=NO GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES | xcpretty
 - pod lib lint
 after_success:
-  - bash <(curl -s https://codecov.io/bash)
+  - bash <(curl -s https://codecov.io/bash) -J 'AesGcm-Example'
