@@ -30,7 +30,7 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		66485F1FBF6EDD82FC7A5E18 /* Pods_AesGcm_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AesGcm_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8456EAD94FB1E142FBB13FCB /* Pods-AesGcm_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AesGcm_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AesGcm_Tests/Pods-AesGcm_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		C7EA266BF31826ABA0DB41B7 /* AesGcm.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = AesGcm.podspec; path = ../AesGcm.podspec; sourceTree = "<group>"; };
+		C7EA266BF31826ABA0DB41B7 /* AesGcm.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = AesGcm.podspec; path = ../AesGcm.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		EC0FC8446547AAADFAFF171E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		FF33EF9C1D981E6600D47A89 /* IAGAesGcmTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAGAesGcmTest.m; sourceTree = "<group>"; };
 		FF33EFEC1D98495000D47A89 /* NSData+IAGHexString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+IAGHexString.h"; sourceTree = "<group>"; };
@@ -145,7 +145,6 @@
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
 				BADF83F80319B1991FEAABBC /* [CP] Embed Pods Frameworks */,
-				9BD16518ACDCEBED79CB97DF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -163,7 +162,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = IAG;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Enrique de la Torre";
 			};
 			buildConfigurationList = 6003F585195388D10070C39A /* Build configuration list for PBXProject "AesGcm" */;
@@ -196,28 +195,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		9BD16518ACDCEBED79CB97DF /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AesGcm_Tests/Pods-AesGcm_Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		BADF83F80319B1991FEAABBC /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-AesGcm_Tests/Pods-AesGcm_Tests-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-AesGcm_Tests/Pods-AesGcm_Tests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AesGcm/AesGcm.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -226,7 +210,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AesGcm_Tests/Pods-AesGcm_Tests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AesGcm_Tests/Pods-AesGcm_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EBEAC77661593113198DCB15 /* [CP] Check Pods Manifest.lock */ = {
@@ -286,12 +270,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -337,12 +323,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
