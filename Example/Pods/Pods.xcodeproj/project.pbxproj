@@ -7,113 +7,114 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		17C19581233B597F2B9A504B71D47306 /* IAGGcmEndianness.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C072BB118C9646043C5290C812E296B /* IAGGcmEndianness.m */; };
-		191EA3150169504EC0B8B43E4EB833D1 /* IAGAesComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = C5557597716E355E3DFDD75214AC13DA /* IAGAesComponents.m */; };
-		1F9FE37F9313CEE355040E207C7E660B /* IAGBitwiseComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = 401E4A0F2A0BAA766E39AA0309298800 /* IAGBitwiseComponents.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		23B7919F613E6C7F0E22476E8EE9DB95 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		2BDAD4B73D7FD842041D74F0554E87CA /* IAGAesGcm.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D540D665D80D2A69771D2612AF9EECE /* IAGAesGcm.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3C230FF8876DFBA952DA0E5C8FFC810F /* IAGCipheredData.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E0FF06C1C43183C6D71158088FBB2B7 /* IAGCipheredData.m */; };
-		47E3BBDE91F4CD731F26C41E0F5980B7 /* IAGAesComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = F2F8D6E0505A08A04C42E82FF54E29CF /* IAGAesComponents.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		4BB1C5997D6C9D1288683364094B1A6A /* Pods-AesGcm_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A204FCA29B525F83619E1C5EA0D30BC /* Pods-AesGcm_Tests-dummy.m */; };
-		6393869342CBE08575C8C9A741646C95 /* IAGError.h in Headers */ = {isa = PBXBuildFile; fileRef = B9CDAAA2BD767E40CF26240AE66497BB /* IAGError.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6ACEB9BCFC5A163B8EBF232C6E516835 /* IAGAesGcm.m in Sources */ = {isa = PBXBuildFile; fileRef = 61517D81C9F3856B3B9F8E456950C34E /* IAGAesGcm.m */; };
-		6D0D7DFEEFAF542B1EC816CD6469D030 /* IAGGcmEndianness.h in Headers */ = {isa = PBXBuildFile; fileRef = E68978386DA6AA8E399B62AF8CBCE0A7 /* IAGGcmEndianness.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		7594939A141E9C5DB42C781816C82CC2 /* IAGError.m in Sources */ = {isa = PBXBuildFile; fileRef = B9FFAFAFCFCB007F564DC0E4733CC287 /* IAGError.m */; };
-		7B80FA321121C9E53DA44587BDB4AC2F /* IAGTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B091F02290A6C8C017FE889423D7CFF /* IAGTypes.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		8730F7A13FBB3D0E9B860093C10FCAEC /* Pods-AesGcm_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E1792CC5222111C41FECA3E6550D887F /* Pods-AesGcm_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8B06E9A8955BBB4ACC51ED893A5F0D58 /* IAGGcmMathComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BE57E27883F0CAB287E6C7526981684 /* IAGGcmMathComponents.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		8D5626CA056514BB4458E9736ACEA15B /* AesGcm-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E90FDE533A681E92CAA4B7F39EC8CD1 /* AesGcm-dummy.m */; };
-		93B0E5803C5B7843B8BB141308E6338B /* IAGCipheredData.h in Headers */ = {isa = PBXBuildFile; fileRef = A4C6ADF3937E65862E3B7C8C0592D71D /* IAGCipheredData.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		976659BC32D1C8E7C724689BD2F24670 /* AesGcm-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 91353ED037D60E542EB19BB9FCF53873 /* AesGcm-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		989DA9B0D5CC23BF7740FC68B0036F9B /* IAGBitwiseComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = 51FBF9E63757E74922DED54B2B021442 /* IAGBitwiseComponents.m */; };
-		DA6A75ECB8A3C1B4B8C809E727367581 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		E478EE283F8751F37E2DC34750F6A42E /* IAGGcmMathComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4D0739D4AD24CB9AEB50D8D2FD91CE /* IAGGcmMathComponents.m */; };
+		021636D2118ADD1CDF27975840A514AD /* IAGAesGcm.m in Sources */ = {isa = PBXBuildFile; fileRef = C72BF8334FF09EB60D10955C2B2320F7 /* IAGAesGcm.m */; };
+		283F2AA134F9D78244CD42A2F93DED0B /* IAGError.m in Sources */ = {isa = PBXBuildFile; fileRef = FD8B22B6668D27C05923FFFA814BC3FE /* IAGError.m */; };
+		2B6C906E510C014D1CF695D1417CB6F5 /* IAGAesComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C63B38578092734E23802D18C236D35 /* IAGAesComponents.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3360A828A7EC7136AB4ABE90AD396B8A /* Pods-AesGcm_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BC708F8FDBCA04D10B77DC86BA8AAED6 /* Pods-AesGcm_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		49275827FAB5A732F7B85C633D3C4F70 /* IAGBitwiseComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = 56C51F041F59024E223619E479048507 /* IAGBitwiseComponents.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		53E34B285440C910D6914FD67F0C0020 /* IAGGcmEndianness.m in Sources */ = {isa = PBXBuildFile; fileRef = 112538163A50C170D367D33BF3DD9F56 /* IAGGcmEndianness.m */; };
+		5531CC112722DD15BC2E882C9804C514 /* IAGCipheredData.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A08860CEB18DDA05A3F2CCC2FED2FA4 /* IAGCipheredData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5895CDA2E81CDC3F59ED2442DDD934DC /* Pods-AesGcm_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 998EB8752F25686D680DDA54FB7ADEE6 /* Pods-AesGcm_Tests-dummy.m */; };
+		76B316B7BE378EA35E69EED5BDA049E1 /* IAGBitwiseComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CB5728B95B057853FC084A55BCCF19A /* IAGBitwiseComponents.m */; };
+		7B46D368315DEFF35B467EB3D598B39D /* IAGGcmMathComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = 3213011D1451D12CBE8244B7790AAF96 /* IAGGcmMathComponents.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9E5DF5D4B80C4456EC6B047E1AF294B6 /* IAGAesComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = 0525A03E5CBEB8058C627BD2C61BF3E5 /* IAGAesComponents.m */; };
+		A0D43085FCFE6E82B851FC48A1EBCD55 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		A238EB6402EE4336113557F1D20481BF /* IAGAesGcm.h in Headers */ = {isa = PBXBuildFile; fileRef = 7965FA402ABCB81AAF80D756038689EC /* IAGAesGcm.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A4F02C29B89A67F0A965458B10778AC2 /* AesGcm-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D2E5B2E467E6206F44259C25E89F940C /* AesGcm-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B3E02A82B17D80889FB3C91DDD03DF74 /* IAGGcmEndianness.h in Headers */ = {isa = PBXBuildFile; fileRef = C72FB7E18FE69106ED2DE8E15F9D8231 /* IAGGcmEndianness.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B4BB5491C918F19CE0BC1E74E496F585 /* IAGCipheredData.m in Sources */ = {isa = PBXBuildFile; fileRef = A29737BC71A71517528892625CE38398 /* IAGCipheredData.m */; };
+		D593CDC775241084BBA3A5810FAC856C /* AesGcm-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A0CC8CED8915961C5B1C9B19D03173 /* AesGcm-dummy.m */; };
+		E74E99D9418013B5DB91B3AEC16E7CE7 /* IAGGcmMathComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = ABCCCDB9A87588D9E946BCB1898CAAB5 /* IAGGcmMathComponents.m */; };
+		EF8E3B1370D248E055A8F493571F9545 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		F0DB02CD2FFC1AA7DD37168F2D68578C /* IAGError.h in Headers */ = {isa = PBXBuildFile; fileRef = 7777E2852F57F29D50AE9A9F83843EC6 /* IAGError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB0EAE5ECBFB673E57F162C9842BC61F /* IAGTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 61107091915A4A98C698C7720C7A5CB0 /* IAGTypes.h */; settings = {ATTRIBUTES = (Project, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		46C755628C4148D2D280E8EAD06CC3A1 /* PBXContainerItemProxy */ = {
+		85B0FB03919B3069097BB6267109562A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 513B3EB569AEE74988B0B4AE10B27813;
+			remoteGlobalIDString = CAD205E2845D0BBE516A84ABDAA68A5C;
 			remoteInfo = AesGcm;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00BEAC499EB5D753F93533BA74541D8C /* AesGcm.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = AesGcm.modulemap; sourceTree = "<group>"; };
-		0C51195EC6E72AE1DABDD4E4CE19FA4E /* Pods-AesGcm_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-AesGcm_Tests.modulemap"; sourceTree = "<group>"; };
-		1C072BB118C9646043C5290C812E296B /* IAGGcmEndianness.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = IAGGcmEndianness.m; sourceTree = "<group>"; };
-		1D540D665D80D2A69771D2612AF9EECE /* IAGAesGcm.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IAGAesGcm.h; path = AesGcm/Classes/IAGAesGcm.h; sourceTree = "<group>"; };
-		259BA140B70F75DDA62E8D63E37D36A8 /* Pods-AesGcm_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AesGcm_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		2C4D0739D4AD24CB9AEB50D8D2FD91CE /* IAGGcmMathComponents.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = IAGGcmMathComponents.m; sourceTree = "<group>"; };
-		309DF19C4A34BF2561A473EE53B50355 /* Pods-AesGcm_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AesGcm_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		3A204FCA29B525F83619E1C5EA0D30BC /* Pods-AesGcm_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AesGcm_Tests-dummy.m"; sourceTree = "<group>"; };
-		401E4A0F2A0BAA766E39AA0309298800 /* IAGBitwiseComponents.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = IAGBitwiseComponents.h; sourceTree = "<group>"; };
-		4BE57E27883F0CAB287E6C7526981684 /* IAGGcmMathComponents.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = IAGGcmMathComponents.h; sourceTree = "<group>"; };
-		51FBF9E63757E74922DED54B2B021442 /* IAGBitwiseComponents.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = IAGBitwiseComponents.m; sourceTree = "<group>"; };
-		551039037E11537558F6A0AF539E7115 /* Pods-AesGcm_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AesGcm_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		5602D791D24983C95EDCA9499F72193E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		61517D81C9F3856B3B9F8E456950C34E /* IAGAesGcm.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IAGAesGcm.m; path = AesGcm/Classes/IAGAesGcm.m; sourceTree = "<group>"; };
-		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		6B091F02290A6C8C017FE889423D7CFF /* IAGTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = IAGTypes.h; sourceTree = "<group>"; };
-		6D0C5F46E89D1F7CF1F24E7E4BCE9D07 /* AesGcm-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AesGcm-prefix.pch"; sourceTree = "<group>"; };
-		8E90FDE533A681E92CAA4B7F39EC8CD1 /* AesGcm-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AesGcm-dummy.m"; sourceTree = "<group>"; };
-		91353ED037D60E542EB19BB9FCF53873 /* AesGcm-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AesGcm-umbrella.h"; sourceTree = "<group>"; };
+		0525A03E5CBEB8058C627BD2C61BF3E5 /* IAGAesComponents.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = IAGAesComponents.m; sourceTree = "<group>"; };
+		0CB5728B95B057853FC084A55BCCF19A /* IAGBitwiseComponents.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = IAGBitwiseComponents.m; sourceTree = "<group>"; };
+		112538163A50C170D367D33BF3DD9F56 /* IAGGcmEndianness.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = IAGGcmEndianness.m; sourceTree = "<group>"; };
+		21F3F971CEABD05A9B5A9D2E69685B45 /* AesGcm-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AesGcm-Info.plist"; sourceTree = "<group>"; };
+		2AC4E24C77F1A7E3ED3CC93C49875876 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		2C3F130008F1BEEB5C2B2A67B0BA1A20 /* AesGcm.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = AesGcm.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		3213011D1451D12CBE8244B7790AAF96 /* IAGGcmMathComponents.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = IAGGcmMathComponents.h; sourceTree = "<group>"; };
+		37B7C89332183676A20FA2DE4EFB3B1E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		5540AFBBE840F6D14B5C94EB75A99E64 /* Pods-AesGcm_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AesGcm_Tests-Info.plist"; sourceTree = "<group>"; };
+		56C51F041F59024E223619E479048507 /* IAGBitwiseComponents.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = IAGBitwiseComponents.h; sourceTree = "<group>"; };
+		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5BD6975C619296E28DDD9AF4E20CFF00 /* AesGcm.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AesGcm.modulemap; sourceTree = "<group>"; };
+		60648AFC281D54C375DE1305DEC5ACB5 /* Pods-AesGcm_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AesGcm_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		61107091915A4A98C698C7720C7A5CB0 /* IAGTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = IAGTypes.h; sourceTree = "<group>"; };
+		6618A63F1132B5FEAC65EFAAF1C39D73 /* Pods-AesGcm_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AesGcm_Tests.modulemap"; sourceTree = "<group>"; };
+		7777E2852F57F29D50AE9A9F83843EC6 /* IAGError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IAGError.h; path = AesGcm/Classes/IAGError.h; sourceTree = "<group>"; };
+		7965FA402ABCB81AAF80D756038689EC /* IAGAesGcm.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IAGAesGcm.h; path = AesGcm/Classes/IAGAesGcm.h; sourceTree = "<group>"; };
+		7E0B1B3A2913365ADA6BDF78C037AEF8 /* AesGcm.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AesGcm.xcconfig; sourceTree = "<group>"; };
+		80A0CC8CED8915961C5B1C9B19D03173 /* AesGcm-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AesGcm-dummy.m"; sourceTree = "<group>"; };
+		8C63B38578092734E23802D18C236D35 /* IAGAesComponents.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = IAGAesComponents.h; sourceTree = "<group>"; };
+		8D2AFAC81613E3B7063C4C9C2203B9E4 /* Pods-AesGcm_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AesGcm_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		8E512B5B95997C3764FC4B85ED70A8A7 /* AesGcm-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AesGcm-prefix.pch"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		993EB8D69ED07220031F844A83AC21E8 /* Pods_AesGcm_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AesGcm_Tests.framework; path = "Pods-AesGcm_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9E0FF06C1C43183C6D71158088FBB2B7 /* IAGCipheredData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IAGCipheredData.m; path = AesGcm/Classes/IAGCipheredData.m; sourceTree = "<group>"; };
-		A4C6ADF3937E65862E3B7C8C0592D71D /* IAGCipheredData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IAGCipheredData.h; path = AesGcm/Classes/IAGCipheredData.h; sourceTree = "<group>"; };
-		B9CDAAA2BD767E40CF26240AE66497BB /* IAGError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IAGError.h; path = AesGcm/Classes/IAGError.h; sourceTree = "<group>"; };
-		B9FFAFAFCFCB007F564DC0E4733CC287 /* IAGError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IAGError.m; path = AesGcm/Classes/IAGError.m; sourceTree = "<group>"; };
+		998EB8752F25686D680DDA54FB7ADEE6 /* Pods-AesGcm_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AesGcm_Tests-dummy.m"; sourceTree = "<group>"; };
+		9A08860CEB18DDA05A3F2CCC2FED2FA4 /* IAGCipheredData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IAGCipheredData.h; path = AesGcm/Classes/IAGCipheredData.h; sourceTree = "<group>"; };
+		A29737BC71A71517528892625CE38398 /* IAGCipheredData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IAGCipheredData.m; path = AesGcm/Classes/IAGCipheredData.m; sourceTree = "<group>"; };
+		ABCCCDB9A87588D9E946BCB1898CAAB5 /* IAGGcmMathComponents.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = IAGGcmMathComponents.m; sourceTree = "<group>"; };
+		B731004A8D33F73CCE3393C719CF57F4 /* Pods-AesGcm_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AesGcm_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		B8AD092E76B44EB8A7DDC49B6C2D7012 /* Pods-AesGcm_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AesGcm_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		BC49C1FCEE243F7F45EFABD4AFC7CFD0 /* AesGcm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AesGcm.framework; path = AesGcm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C5557597716E355E3DFDD75214AC13DA /* IAGAesComponents.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = IAGAesComponents.m; sourceTree = "<group>"; };
-		D6E3BD4B3E19D255521F5A43CDB71F26 /* Pods-AesGcm_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AesGcm_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		DE5CA534921E6FF2CAA257BE34911AFB /* AesGcm.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AesGcm.xcconfig; sourceTree = "<group>"; };
-		E1792CC5222111C41FECA3E6550D887F /* Pods-AesGcm_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AesGcm_Tests-umbrella.h"; sourceTree = "<group>"; };
-		E68978386DA6AA8E399B62AF8CBCE0A7 /* IAGGcmEndianness.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = IAGGcmEndianness.h; sourceTree = "<group>"; };
-		EFE574F4E18FCAE635A1BD69576067C5 /* Pods-AesGcm_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AesGcm_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		F0368FCE1DFF29E2DA5DD8D031D5D755 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F2F8D6E0505A08A04C42E82FF54E29CF /* IAGAesComponents.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = IAGAesComponents.h; sourceTree = "<group>"; };
-		F966F0D384E363EC6C45833A22CC4D8C /* Pods-AesGcm_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AesGcm_Tests-resources.sh"; sourceTree = "<group>"; };
+		BC708F8FDBCA04D10B77DC86BA8AAED6 /* Pods-AesGcm_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AesGcm_Tests-umbrella.h"; sourceTree = "<group>"; };
+		C72BF8334FF09EB60D10955C2B2320F7 /* IAGAesGcm.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IAGAesGcm.m; path = AesGcm/Classes/IAGAesGcm.m; sourceTree = "<group>"; };
+		C72FB7E18FE69106ED2DE8E15F9D8231 /* IAGGcmEndianness.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = IAGGcmEndianness.h; sourceTree = "<group>"; };
+		D2E5B2E467E6206F44259C25E89F940C /* AesGcm-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AesGcm-umbrella.h"; sourceTree = "<group>"; };
+		D89148A2DB3E627F2C85CFF97ADDAF3B /* Pods-AesGcm_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AesGcm_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		FD8B22B6668D27C05923FFFA814BC3FE /* IAGError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IAGError.m; path = AesGcm/Classes/IAGError.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		BADC3ADF57F0F8BF53980CE4D4AB0749 /* Frameworks */ = {
+		94A82B40D255EA963905215857B5358C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA6A75ECB8A3C1B4B8C809E727367581 /* Foundation.framework in Frameworks */,
+				EF8E3B1370D248E055A8F493571F9545 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CEA945137042494417ECB3BF1B6FE670 /* Frameworks */ = {
+		C429B04DD0CF4934E8A8DE247C578D10 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23B7919F613E6C7F0E22476E8EE9DB95 /* Foundation.framework in Frameworks */,
+				A0D43085FCFE6E82B851FC48A1EBCD55 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		10F339ECD03DD5EA6C82E6E6B3D969D2 /* Pods-AesGcm_Tests */ = {
+		22FE83A20BC780E2D11EA2B702D08091 /* AesGcm */ = {
 			isa = PBXGroup;
 			children = (
-				F0368FCE1DFF29E2DA5DD8D031D5D755 /* Info.plist */,
-				0C51195EC6E72AE1DABDD4E4CE19FA4E /* Pods-AesGcm_Tests.modulemap */,
-				309DF19C4A34BF2561A473EE53B50355 /* Pods-AesGcm_Tests-acknowledgements.markdown */,
-				D6E3BD4B3E19D255521F5A43CDB71F26 /* Pods-AesGcm_Tests-acknowledgements.plist */,
-				3A204FCA29B525F83619E1C5EA0D30BC /* Pods-AesGcm_Tests-dummy.m */,
-				259BA140B70F75DDA62E8D63E37D36A8 /* Pods-AesGcm_Tests-frameworks.sh */,
-				F966F0D384E363EC6C45833A22CC4D8C /* Pods-AesGcm_Tests-resources.sh */,
-				E1792CC5222111C41FECA3E6550D887F /* Pods-AesGcm_Tests-umbrella.h */,
-				551039037E11537558F6A0AF539E7115 /* Pods-AesGcm_Tests.debug.xcconfig */,
-				EFE574F4E18FCAE635A1BD69576067C5 /* Pods-AesGcm_Tests.release.xcconfig */,
+				7965FA402ABCB81AAF80D756038689EC /* IAGAesGcm.h */,
+				C72BF8334FF09EB60D10955C2B2320F7 /* IAGAesGcm.m */,
+				9A08860CEB18DDA05A3F2CCC2FED2FA4 /* IAGCipheredData.h */,
+				A29737BC71A71517528892625CE38398 /* IAGCipheredData.m */,
+				7777E2852F57F29D50AE9A9F83843EC6 /* IAGError.h */,
+				FD8B22B6668D27C05923FFFA814BC3FE /* IAGError.m */,
+				534B7DABC23A129D0EFC4BA352D0CE13 /* Components */,
+				A9DDDBF4F87F39657E3BC05B3CD265AC /* Pod */,
+				3E70D40275EB9C4774A28CD8D5C9E318 /* Support Files */,
 			);
-			name = "Pods-AesGcm_Tests";
-			path = "Target Support Files/Pods-AesGcm_Tests";
+			name = AesGcm;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		33B71E3D9F58954655363843333302DA /* Products */ = {
@@ -125,133 +126,164 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		67DD332A52927D208FFE103F4918CE5F /* Targets Support Files */ = {
+		3E70D40275EB9C4774A28CD8D5C9E318 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				10F339ECD03DD5EA6C82E6E6B3D969D2 /* Pods-AesGcm_Tests */,
+				5BD6975C619296E28DDD9AF4E20CFF00 /* AesGcm.modulemap */,
+				7E0B1B3A2913365ADA6BDF78C037AEF8 /* AesGcm.xcconfig */,
+				80A0CC8CED8915961C5B1C9B19D03173 /* AesGcm-dummy.m */,
+				21F3F971CEABD05A9B5A9D2E69685B45 /* AesGcm-Info.plist */,
+				8E512B5B95997C3764FC4B85ED70A8A7 /* AesGcm-prefix.pch */,
+				D2E5B2E467E6206F44259C25E89F940C /* AesGcm-umbrella.h */,
 			);
-			name = "Targets Support Files";
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/AesGcm";
+			sourceTree = "<group>";
+		};
+		534B7DABC23A129D0EFC4BA352D0CE13 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				8C63B38578092734E23802D18C236D35 /* IAGAesComponents.h */,
+				0525A03E5CBEB8058C627BD2C61BF3E5 /* IAGAesComponents.m */,
+				56C51F041F59024E223619E479048507 /* IAGBitwiseComponents.h */,
+				0CB5728B95B057853FC084A55BCCF19A /* IAGBitwiseComponents.m */,
+				C72FB7E18FE69106ED2DE8E15F9D8231 /* IAGGcmEndianness.h */,
+				112538163A50C170D367D33BF3DD9F56 /* IAGGcmEndianness.m */,
+				3213011D1451D12CBE8244B7790AAF96 /* IAGGcmMathComponents.h */,
+				ABCCCDB9A87588D9E946BCB1898CAAB5 /* IAGGcmMathComponents.m */,
+				61107091915A4A98C698C7720C7A5CB0 /* IAGTypes.h */,
+			);
+			name = Components;
+			path = AesGcm/Classes/Components;
+			sourceTree = "<group>";
+		};
+		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				C07669368CA1BB31704743E0F3A9884A /* Development Pods */,
+				AA5834C4C46884AC4FC9827D35985ADD /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				33B71E3D9F58954655363843333302DA /* Products */,
-				67DD332A52927D208FFE103F4918CE5F /* Targets Support Files */,
+				B0DCE778EF5484159EE9FD0485432645 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		A4761091FB824B8037F9C1B4E076E9ED /* Support Files */ = {
+		A9DDDBF4F87F39657E3BC05B3CD265AC /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				00BEAC499EB5D753F93533BA74541D8C /* AesGcm.modulemap */,
-				DE5CA534921E6FF2CAA257BE34911AFB /* AesGcm.xcconfig */,
-				8E90FDE533A681E92CAA4B7F39EC8CD1 /* AesGcm-dummy.m */,
-				6D0C5F46E89D1F7CF1F24E7E4BCE9D07 /* AesGcm-prefix.pch */,
-				91353ED037D60E542EB19BB9FCF53873 /* AesGcm-umbrella.h */,
-				5602D791D24983C95EDCA9499F72193E /* Info.plist */,
+				2C3F130008F1BEEB5C2B2A67B0BA1A20 /* AesGcm.podspec */,
+				37B7C89332183676A20FA2DE4EFB3B1E /* LICENSE */,
+				2AC4E24C77F1A7E3ED3CC93C49875876 /* README.md */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/AesGcm";
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		AA5834C4C46884AC4FC9827D35985ADD /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				22FE83A20BC780E2D11EA2B702D08091 /* AesGcm */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		B0DCE778EF5484159EE9FD0485432645 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F7C5D2AE4DA6AA0550C8D24E384EAB92 /* Pods-AesGcm_Tests */,
+			);
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+				5E0D919E635D23B70123790B8308F8EF /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BF7A4FF6009D0BD3493ED9B525139B0A /* Components */ = {
+		F7C5D2AE4DA6AA0550C8D24E384EAB92 /* Pods-AesGcm_Tests */ = {
 			isa = PBXGroup;
 			children = (
-				F2F8D6E0505A08A04C42E82FF54E29CF /* IAGAesComponents.h */,
-				C5557597716E355E3DFDD75214AC13DA /* IAGAesComponents.m */,
-				401E4A0F2A0BAA766E39AA0309298800 /* IAGBitwiseComponents.h */,
-				51FBF9E63757E74922DED54B2B021442 /* IAGBitwiseComponents.m */,
-				E68978386DA6AA8E399B62AF8CBCE0A7 /* IAGGcmEndianness.h */,
-				1C072BB118C9646043C5290C812E296B /* IAGGcmEndianness.m */,
-				4BE57E27883F0CAB287E6C7526981684 /* IAGGcmMathComponents.h */,
-				2C4D0739D4AD24CB9AEB50D8D2FD91CE /* IAGGcmMathComponents.m */,
-				6B091F02290A6C8C017FE889423D7CFF /* IAGTypes.h */,
+				6618A63F1132B5FEAC65EFAAF1C39D73 /* Pods-AesGcm_Tests.modulemap */,
+				B8AD092E76B44EB8A7DDC49B6C2D7012 /* Pods-AesGcm_Tests-acknowledgements.markdown */,
+				B731004A8D33F73CCE3393C719CF57F4 /* Pods-AesGcm_Tests-acknowledgements.plist */,
+				998EB8752F25686D680DDA54FB7ADEE6 /* Pods-AesGcm_Tests-dummy.m */,
+				D89148A2DB3E627F2C85CFF97ADDAF3B /* Pods-AesGcm_Tests-frameworks.sh */,
+				5540AFBBE840F6D14B5C94EB75A99E64 /* Pods-AesGcm_Tests-Info.plist */,
+				BC708F8FDBCA04D10B77DC86BA8AAED6 /* Pods-AesGcm_Tests-umbrella.h */,
+				60648AFC281D54C375DE1305DEC5ACB5 /* Pods-AesGcm_Tests.debug.xcconfig */,
+				8D2AFAC81613E3B7063C4C9C2203B9E4 /* Pods-AesGcm_Tests.release.xcconfig */,
 			);
-			name = Components;
-			path = AesGcm/Classes/Components;
-			sourceTree = "<group>";
-		};
-		C07669368CA1BB31704743E0F3A9884A /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				D5483FE3676DDA7528FE47AF51AD18B3 /* AesGcm */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		D5483FE3676DDA7528FE47AF51AD18B3 /* AesGcm */ = {
-			isa = PBXGroup;
-			children = (
-				1D540D665D80D2A69771D2612AF9EECE /* IAGAesGcm.h */,
-				61517D81C9F3856B3B9F8E456950C34E /* IAGAesGcm.m */,
-				A4C6ADF3937E65862E3B7C8C0592D71D /* IAGCipheredData.h */,
-				9E0FF06C1C43183C6D71158088FBB2B7 /* IAGCipheredData.m */,
-				B9CDAAA2BD767E40CF26240AE66497BB /* IAGError.h */,
-				B9FFAFAFCFCB007F564DC0E4733CC287 /* IAGError.m */,
-				BF7A4FF6009D0BD3493ED9B525139B0A /* Components */,
-				A4761091FB824B8037F9C1B4E076E9ED /* Support Files */,
-			);
-			name = AesGcm;
-			path = ../..;
+			name = "Pods-AesGcm_Tests";
+			path = "Target Support Files/Pods-AesGcm_Tests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		47CB0A6B192E2C02F043DA73DC53C907 /* Headers */ = {
+		08455FBBAD7348AEB83FE97EB0805202 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				976659BC32D1C8E7C724689BD2F24670 /* AesGcm-umbrella.h in Headers */,
-				47E3BBDE91F4CD731F26C41E0F5980B7 /* IAGAesComponents.h in Headers */,
-				2BDAD4B73D7FD842041D74F0554E87CA /* IAGAesGcm.h in Headers */,
-				1F9FE37F9313CEE355040E207C7E660B /* IAGBitwiseComponents.h in Headers */,
-				93B0E5803C5B7843B8BB141308E6338B /* IAGCipheredData.h in Headers */,
-				6393869342CBE08575C8C9A741646C95 /* IAGError.h in Headers */,
-				6D0D7DFEEFAF542B1EC816CD6469D030 /* IAGGcmEndianness.h in Headers */,
-				8B06E9A8955BBB4ACC51ED893A5F0D58 /* IAGGcmMathComponents.h in Headers */,
-				7B80FA321121C9E53DA44587BDB4AC2F /* IAGTypes.h in Headers */,
+				A4F02C29B89A67F0A965458B10778AC2 /* AesGcm-umbrella.h in Headers */,
+				2B6C906E510C014D1CF695D1417CB6F5 /* IAGAesComponents.h in Headers */,
+				A238EB6402EE4336113557F1D20481BF /* IAGAesGcm.h in Headers */,
+				49275827FAB5A732F7B85C633D3C4F70 /* IAGBitwiseComponents.h in Headers */,
+				5531CC112722DD15BC2E882C9804C514 /* IAGCipheredData.h in Headers */,
+				F0DB02CD2FFC1AA7DD37168F2D68578C /* IAGError.h in Headers */,
+				B3E02A82B17D80889FB3C91DDD03DF74 /* IAGGcmEndianness.h in Headers */,
+				7B46D368315DEFF35B467EB3D598B39D /* IAGGcmMathComponents.h in Headers */,
+				FB0EAE5ECBFB673E57F162C9842BC61F /* IAGTypes.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F7B434122A93CC20A02DE89AC7E3A8D5 /* Headers */ = {
+		F6D089DBC74C1D0ADD81956DD4FD0826 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8730F7A13FBB3D0E9B860093C10FCAEC /* Pods-AesGcm_Tests-umbrella.h in Headers */,
+				3360A828A7EC7136AB4ABE90AD396B8A /* Pods-AesGcm_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		513B3EB569AEE74988B0B4AE10B27813 /* AesGcm */ = {
+		9E8CC60345327C8A61C882B5D986404F /* Pods-AesGcm_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 16758FB4EE1729F854EAC79CC6E80B69 /* Build configuration list for PBXNativeTarget "AesGcm" */;
+			buildConfigurationList = 1193C3DB1AD34809F5B0901F5F1430D3 /* Build configuration list for PBXNativeTarget "Pods-AesGcm_Tests" */;
 			buildPhases = (
-				712B25F9B63684479F41D2761698F916 /* Sources */,
-				CEA945137042494417ECB3BF1B6FE670 /* Frameworks */,
-				47CB0A6B192E2C02F043DA73DC53C907 /* Headers */,
+				F6D089DBC74C1D0ADD81956DD4FD0826 /* Headers */,
+				41EA8D95F30ADB92BECD238B0C42FA37 /* Sources */,
+				94A82B40D255EA963905215857B5358C /* Frameworks */,
+				A38C8217DF114B7829E611B5E609C44B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ACFF9C845620D0A7A8B25728413CBCCD /* PBXTargetDependency */,
+			);
+			name = "Pods-AesGcm_Tests";
+			productName = "Pods-AesGcm_Tests";
+			productReference = 993EB8D69ED07220031F844A83AC21E8 /* Pods_AesGcm_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CAD205E2845D0BBE516A84ABDAA68A5C /* AesGcm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 873EB88E64B09A2F9E85D46D373FAC74 /* Build configuration list for PBXNativeTarget "AesGcm" */;
+			buildPhases = (
+				08455FBBAD7348AEB83FE97EB0805202 /* Headers */,
+				A4902F0634CACAE3B562D8D17ACE7BC7 /* Sources */,
+				C429B04DD0CF4934E8A8DE247C578D10 /* Frameworks */,
+				39EA6CE3DD402185B8C5C81415528340 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -262,32 +294,14 @@
 			productReference = BC49C1FCEE243F7F45EFABD4AFC7CFD0 /* AesGcm.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		DD2549C7AEE5F33A7442B0C7886CD976 /* Pods-AesGcm_Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 071F61340B8ADEBBDC560A46FC3ABC98 /* Build configuration list for PBXNativeTarget "Pods-AesGcm_Tests" */;
-			buildPhases = (
-				CD4A417F9CB584B92DA5030614F70FB6 /* Sources */,
-				BADC3ADF57F0F8BF53980CE4D4AB0749 /* Frameworks */,
-				F7B434122A93CC20A02DE89AC7E3A8D5 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E92256478151D9F31D8406FEF0D9CF36 /* PBXTargetDependency */,
-			);
-			name = "Pods-AesGcm_Tests";
-			productName = "Pods-AesGcm_Tests";
-			productReference = 993EB8D69ED07220031F844A83AC21E8 /* Pods_AesGcm_Tests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0700;
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -301,49 +315,99 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				513B3EB569AEE74988B0B4AE10B27813 /* AesGcm */,
-				DD2549C7AEE5F33A7442B0C7886CD976 /* Pods-AesGcm_Tests */,
+				CAD205E2845D0BBE516A84ABDAA68A5C /* AesGcm */,
+				9E8CC60345327C8A61C882B5D986404F /* Pods-AesGcm_Tests */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXSourcesBuildPhase section */
-		712B25F9B63684479F41D2761698F916 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
+/* Begin PBXResourcesBuildPhase section */
+		39EA6CE3DD402185B8C5C81415528340 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D5626CA056514BB4458E9736ACEA15B /* AesGcm-dummy.m in Sources */,
-				191EA3150169504EC0B8B43E4EB833D1 /* IAGAesComponents.m in Sources */,
-				6ACEB9BCFC5A163B8EBF232C6E516835 /* IAGAesGcm.m in Sources */,
-				989DA9B0D5CC23BF7740FC68B0036F9B /* IAGBitwiseComponents.m in Sources */,
-				3C230FF8876DFBA952DA0E5C8FFC810F /* IAGCipheredData.m in Sources */,
-				7594939A141E9C5DB42C781816C82CC2 /* IAGError.m in Sources */,
-				17C19581233B597F2B9A504B71D47306 /* IAGGcmEndianness.m in Sources */,
-				E478EE283F8751F37E2DC34750F6A42E /* IAGGcmMathComponents.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CD4A417F9CB584B92DA5030614F70FB6 /* Sources */ = {
+		A38C8217DF114B7829E611B5E609C44B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		41EA8D95F30ADB92BECD238B0C42FA37 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BB1C5997D6C9D1288683364094B1A6A /* Pods-AesGcm_Tests-dummy.m in Sources */,
+				5895CDA2E81CDC3F59ED2442DDD934DC /* Pods-AesGcm_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4902F0634CACAE3B562D8D17ACE7BC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D593CDC775241084BBA3A5810FAC856C /* AesGcm-dummy.m in Sources */,
+				9E5DF5D4B80C4456EC6B047E1AF294B6 /* IAGAesComponents.m in Sources */,
+				021636D2118ADD1CDF27975840A514AD /* IAGAesGcm.m in Sources */,
+				76B316B7BE378EA35E69EED5BDA049E1 /* IAGBitwiseComponents.m in Sources */,
+				B4BB5491C918F19CE0BC1E74E496F585 /* IAGCipheredData.m in Sources */,
+				283F2AA134F9D78244CD42A2F93DED0B /* IAGError.m in Sources */,
+				53E34B285440C910D6914FD67F0C0020 /* IAGGcmEndianness.m in Sources */,
+				E74E99D9418013B5DB91B3AEC16E7CE7 /* IAGGcmMathComponents.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		E92256478151D9F31D8406FEF0D9CF36 /* PBXTargetDependency */ = {
+		ACFF9C845620D0A7A8B25728413CBCCD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = AesGcm;
-			target = 513B3EB569AEE74988B0B4AE10B27813 /* AesGcm */;
-			targetProxy = 46C755628C4148D2D280E8EAD06CC3A1 /* PBXContainerItemProxy */;
+			target = CAD205E2845D0BBE516A84ABDAA68A5C /* AesGcm */;
+			targetProxy = 85B0FB03919B3069097BB6267109562A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1CDAB5613991E411E5990BAF694995C5 /* Debug */ = {
+		1415345AC8AD52F17D5F3A04B9D47C54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60648AFC281D54C375DE1305DEC5ACB5 /* Pods-AesGcm_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AesGcm_Tests/Pods-AesGcm_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AesGcm_Tests/Pods-AesGcm_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		73ABC2D18F03827B7773405E7F2AD926 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -353,10 +417,12 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -364,6 +430,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -372,6 +439,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -393,17 +461,47 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		7B62A85C412D689EF418FA67DA770A41 /* Release */ = {
+		995F72E8A40DC652CAD2A48417D1BFF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E0B1B3A2913365ADA6BDF78C037AEF8 /* AesGcm.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AesGcm/AesGcm-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AesGcm/AesGcm-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AesGcm/AesGcm.modulemap";
+				PRODUCT_MODULE_NAME = AesGcm;
+				PRODUCT_NAME = AesGcm;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9B6B989AABD96BB9DECB1784EA5E2534 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -413,10 +511,12 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -424,6 +524,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -432,6 +533,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -451,16 +553,50 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
-		91EDD36FEEA8479419062F74B1B904A5 /* Release */ = {
+		C095F93077C89603F410C14D5BEBB8A8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DE5CA534921E6FF2CAA257BE34911AFB /* AesGcm.xcconfig */;
+			baseConfigurationReference = 8D2AFAC81613E3B7063C4C9C2203B9E4 /* Pods-AesGcm_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AesGcm_Tests/Pods-AesGcm_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AesGcm_Tests/Pods-AesGcm_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CF8460C294C511A4A4E83AC6C75F8DAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E0B1B3A2913365ADA6BDF78C037AEF8 /* AesGcm.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -472,11 +608,12 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PREFIX_HEADER = "Target Support Files/AesGcm/AesGcm-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AesGcm/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/AesGcm/AesGcm-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/AesGcm/AesGcm.modulemap";
+				PRODUCT_MODULE_NAME = AesGcm;
 				PRODUCT_NAME = AesGcm;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -487,118 +624,15 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		A183510D9632975DCDB60EC6402AD833 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EFE574F4E18FCAE635A1BD69576067C5 /* Pods-AesGcm_Tests.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-AesGcm_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-AesGcm_Tests/Pods-AesGcm_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_AesGcm_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		B39EB140C8FBFE8678B2CA0308B038FB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DE5CA534921E6FF2CAA257BE34911AFB /* AesGcm.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/AesGcm/AesGcm-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AesGcm/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/AesGcm/AesGcm.modulemap";
-				PRODUCT_NAME = AesGcm;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		D7D7BBDB31B5EFC256C43E071806A982 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 551039037E11537558F6A0AF539E7115 /* Pods-AesGcm_Tests.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-AesGcm_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-AesGcm_Tests/Pods-AesGcm_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_AesGcm_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		071F61340B8ADEBBDC560A46FC3ABC98 /* Build configuration list for PBXNativeTarget "Pods-AesGcm_Tests" */ = {
+		1193C3DB1AD34809F5B0901F5F1430D3 /* Build configuration list for PBXNativeTarget "Pods-AesGcm_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D7D7BBDB31B5EFC256C43E071806A982 /* Debug */,
-				A183510D9632975DCDB60EC6402AD833 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		16758FB4EE1729F854EAC79CC6E80B69 /* Build configuration list for PBXNativeTarget "AesGcm" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B39EB140C8FBFE8678B2CA0308B038FB /* Debug */,
-				91EDD36FEEA8479419062F74B1B904A5 /* Release */,
+				1415345AC8AD52F17D5F3A04B9D47C54 /* Debug */,
+				C095F93077C89603F410C14D5BEBB8A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -606,8 +640,17 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1CDAB5613991E411E5990BAF694995C5 /* Debug */,
-				7B62A85C412D689EF418FA67DA770A41 /* Release */,
+				73ABC2D18F03827B7773405E7F2AD926 /* Debug */,
+				9B6B989AABD96BB9DECB1784EA5E2534 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		873EB88E64B09A2F9E85D46D373FAC74 /* Build configuration list for PBXNativeTarget "AesGcm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				995F72E8A40DC652CAD2A48417D1BFF9 /* Debug */,
+				CF8460C294C511A4A4E83AC6C75F8DAF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
