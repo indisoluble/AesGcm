@@ -6,14 +6,6 @@
 
 ObjC implementation of [Galois/Counter Mode (GCM)](http://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-38d.pdf) with Advanced Encryption System (AES).
 
-## Notice
-
-As pointed out in [this comment in StackOverflow](http://stackoverflow.com/a/36634956), iOS already has some GCM crypt functions, however they are not public. In the mean time, you can use the methods in this repo.
-
-The documents used as guide to code this algorithm were:
-* [Recommendation for Block Cipher Modes of Operation: Galois/Counter Mode (GCM) and GMAC](http://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-38d.pdf)
-* [The Galois/Counter Mode of Operation (GCM)](http://csrc.nist.gov/groups/ST/toolkit/BCM/documents/proposedmodes/gcm/gcm-spec.pdf)
-
 ## Installation
 
 AesGcm is available through [CocoaPods](http://cocoapods.org). To install it, simply add the following line to your Podfile:
@@ -62,6 +54,12 @@ NSData *plainData = [IAGAesGcm plainDataByAuthenticatedDecryptingCipheredData:ci
 
 XCTAssertEqualObjects(expectedPlainData, plainData);
 ```
+
+## Acknowledgements
+
+This implementation is based on the following documents:
+* [Recommendation for Block Cipher Modes of Operation: Galois/Counter Mode (GCM) and GMAC](http://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-38d.pdf)
+* [The Galois/Counter Mode of Operation (GCM)](http://csrc.nist.gov/groups/ST/toolkit/BCM/documents/proposedmodes/gcm/gcm-spec.pdf)
 
 ## License
 
