@@ -3,7 +3,6 @@
 [![CI Status](https://travis-ci.org/indisoluble/AesGcm.svg)](https://travis-ci.org/indisoluble/AesGcm)
 [![codecov.io](https://codecov.io/github/indisoluble/AesGcm/coverage.svg)](https://codecov.io/github/indisoluble/AesGcm)
 [![Version](https://img.shields.io/cocoapods/v/AesGcm.svg?style=flat)](http://cocoapods.org/pods/AesGcm)
-[![Docs](https://img.shields.io/cocoapods/metrics/doc-percent/AesGcm.svg)](http://cocoadocs.org/docsets/AesGcm)
 
 ObjC implementation of [Galois/Counter Mode (GCM)](http://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-38d.pdf) with Advanced Encryption System (AES).
 
